@@ -1,0 +1,77 @@
+page-tabs {
+
+	.ion-md-perfil::before {
+    	content: "";
+    	background:url('/assets/imgs/icon-profile.svg')no-repeat;
+		display:block;
+		width: 26px;
+		height:26px;
+		background-size: 100% 100%;
+	}
+	.ion-md-premios::before {
+    	content: "";
+    	background:url('/assets/imgs/icon-bone.svg')no-repeat;
+		display:block;
+		width: 26px;
+		height:26px;
+		background-size: 100% 100%;
+	}
+	.ion-md-actividad::before {
+    	content: "";
+    	background:url('/assets/imgs/icon-actividad.svg')no-repeat;
+		display:block;
+		width: 26px;
+		height:26px;
+		background-size: 100% 100%;
+	}
+	.ion-md-ranking::before {
+    	content: "";
+    	background:url('/assets/imgs/icon-awward.svg')no-repeat;
+		display:block;
+		width: 26px;
+		height:26px;
+		background-size: 100% 100%;
+	}
+	.tabs-md .tab-button {
+    font-weight: normal;
+    border-right:1px solid;
+	}
+
+	.tabs-md .tabbar {
+	color:$white;
+    background:$tabsGreen;
+	}
+
+.tabs-md .tab-button {
+    font-weight: normal;
+    color: $white;
+}
+
+.tabs-md .tab-button[aria-selected="true"] {
+    color: $white;
+    background:$pinkTabs;
+}
+
+.tabs-md .tab-button[aria-selected="true"] .tab-button-icon {
+    color:$white;
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+.tabs-md .tab-button-icon {
+    margin-top: 1px;
+    min-width: 2.4rem;
+    font-size: 2.4rem;
+    color: $white;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transform-origin: 50% 150%;
+    transform-origin: 50% 150%;
+    
+}
+
+
+
+}
+

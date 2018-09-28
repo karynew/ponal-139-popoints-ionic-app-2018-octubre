@@ -1,0 +1,169 @@
+page-tab1 {
+	.toolbar-background-md {
+     
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
+        background: #4fd194; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+		
+.card-content-md {
+    padding: 0px 0px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items:center;
+}
+
+.card-title-md {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color:$tabsGreen;
+    margin: 2px 0;
+    padding: 0px 0;
+}
+
+ion-app.md [padding] .scroll-content {
+    padding: 0px;
+}
+.bar-buttons-md {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    justify-content: initial;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: $white;
+    background-color: transparent;
+}
+
+.title-avatar{
+    width:40%;
+}
+.content-md {
+    display: flex; 
+    color:$white;
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+    background: #139980; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #139980 0%,#4fd194 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #139980 0%,#4fd194 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.dog-info{
+     color:$tabsGreen;
+    h1{
+        font-size:2rem;
+    }
+    p{
+        font-size:1rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+}
+
+.dog-img{
+    margin: 10px;
+    padding: 10px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+    background: #139980; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #139980 0%,#4fd194 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #139980 0%,#4fd194 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.avatar-img-content{
+    width:70px;
+    height:70px;
+     border-radius:50%;
+     background:$white;
+
+}
+.card-md {
+    margin:0px;
+    border-radius: 2px;
+    width: calc(100% - 0px);
+    font-size: 1.4rem;
+    background: $white;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.card-content-md {
+    padding: 0px 0px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    display:flex;
+    p{
+        width:60%;
+    }
+}
+
+.dog-contributions{
+    width: 100%;
+    p{
+        text-align: center;
+        margin:5px;
+    }
+    .contributions-item{
+          width: 33%;
+          display:inline-flex;
+        .contributions-item-package{
+            text-align: center;
+            span{
+                font-size: 3rem;
+                font-weight:bolder;
+            }
+            p{
+                font-size: 1rem;
+                padding:0px;
+                margin:0px;
+            }
+            .dog-item{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background:$white;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-bottom: 0px;
+                img{
+                    width:50px;
+                    height:50px;
+                }
+            }
+        }
+
+    }
+    
+   
+}
+
+.facebook{
+    background:$blueFacebbok;
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    border-bottom: 5px solid $borderFacebook;
+    padding: 20px;
+}
+
+}
