@@ -15,11 +15,28 @@
     background: -webkit-linear-gradient(45deg, #139980 0%,#4fd194 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #139980 0%,#4fd194 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      .slide-zoom {
+        text-align: center;
+        display: block;
+        width: 50%;
+        background: white;
+        border-radius: 23px;
+        height: 50vh;
+      }
     }
  
     ion-slide img {
       height: 70vh !important;
       width: auto !important;
+    }
+
+    .popoints-intro{
+      display:flex;
+      justify-content:center;
+
+      img{
+        width:25%;
+      }
     }
  
   }
