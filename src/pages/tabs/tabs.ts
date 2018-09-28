@@ -12,7 +12,7 @@ export class TabsPage {
   tab2Root: any = 'Tab2Page';
   tab3Root: any = 'Tab3Page';
   tab4Root: any = 'Tab4Page';
-  specialRoot: any ='SpecialPage';
+  specialPage: any = 'SpecialPage';
   myIndex: number;
  
   constructor(navParams: NavParams) {
