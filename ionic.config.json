@@ -1,0 +1,7 @@
+{
+  "name": "pages",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
