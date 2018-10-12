@@ -2,24 +2,24 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { Storage } from '@ionic/storage';
-import { LoadingController } from 'ionic-angular';
+// import { Storage } from '@ionic/storage';
+// import { LoadingController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = 'LoginPage';
+  rootPage:any = 'IntroPage';
   loader: any;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public loadingCtrl: LoadingController, public storage: Storage) {
-    this.presentLoading();
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    //this.presentLoading();
 
     platform.ready().then(() => {
       statusBar.styleDefault();
       splashScreen.hide();
 
-      this.storage.get('introShown').then((result) => {
+      /*this.storage.get('introShown').then((result) => {
  
         if(result){
           this.rootPage = 'LoginPage';
@@ -32,10 +32,10 @@ export class MyApp {
  
         this.loader.dismiss();
  
-      });
+      });*/
     });
   }
-  presentLoading() {
+  /*presentLoading() {
  
     this.loader = this.loadingCtrl.create({
       content: "Authenticating..."
@@ -43,5 +43,5 @@ export class MyApp {
  
     this.loader.present();
  
-  }
+  }*/
 }
