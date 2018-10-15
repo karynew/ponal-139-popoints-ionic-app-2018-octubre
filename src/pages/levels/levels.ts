@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-//import { CameraViewPage } from '../camera-view/camera-view';
-
 /**
- * Generated class for the DogSignupPage page.
+ * Generated class for the LevelsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-dog-signup',
-  templateUrl: 'dog-signup.html',
+  selector: 'page-levels',
+  templateUrl: 'levels.html',
 })
-export class DogSignupPage {
+export class LevelsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DogSignupPage');
-  }
-
-  goPhoto() {
-  	this.navCtrl.setRoot('CameraViewPage');
+    console.log('ionViewDidLoad LevelsPage');
   }
 
 }

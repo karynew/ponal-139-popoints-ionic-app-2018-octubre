@@ -1,3 +1,114 @@
 page-tab2 {
+	.ion-app.md [padding] .scroll-content {
+    padding: 0px;
+	}
 
+	.scroll-content{
+		 padding: 0px;
+		 background:$darkGreen;
+	}
+
+
+	.awwards{
+		border-bottom:none;
+		display: flex;
+		justify-content:flex-end;
+		.price{
+		 display: flex;
+		justify-content:flex-end;
+		padding: 20px;
+		width: 70%;
+		text-align:right;
+		text-indent: 20px;
+		font-size: 0.9rem;
+		}
+		
+	}
+	.clean{
+		background:url('/assets/imgs/premios2.png')no-repeat$darkGreen;
+		background-size:40%;
+		background-position:-15% 0%;
+		height:19vh;
+	}
+	.hotel{
+		background:url('/assets/imgs/premios3.png')no-repeat$lightMediumGreen;
+		background-size:40%;
+		background-position:0% 0%;
+		height:19vh;
+		
+	}
+	.friendly{
+		background:url('/assets/imgs/premios4.png')no-repeat$darkMediumGreen;
+		background-size:40%;
+		background-position:0% 0%;
+		height:19vh;
+		
+	}
+	.food{
+		background:url('/assets/imgs/premios1.png')no-repeat$lightGreen;
+		background-size:40%;
+		background-position:-15% 0%;
+		height:19vh;
+
+	}
+
+	// button outline -awward
+// --------------------------------------------------
+.button-outline-md {
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: $white;
+    color:$white;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align:right;
+	}
+//-------------------------------------
+//icons-buttons
+	.ion-md-food-icon::before {
+    	content: "";
+		background:url('/assets/imgs/icon-food-menu.svg')no-repeat;
+		display:block;
+		width: 49px;
+		height:22px;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 13px;
+		top: 8px;
+	}
+	.ion-md-food-clean::before {
+    	content: "";
+		background:url('/assets/imgs/icon-clean-menu.svg')no-repeat;
+		display:block;
+		width: 49px;
+		height:22px;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 13px;
+		top: 8px;
+	}
+	.ion-md-food-hotel::before {
+    	content: "";
+		background:url('/assets/imgs/icon-home-menu.svg')no-repeat;
+		display:block;
+		width: 49px;
+		height:27px;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 13px;
+		top: 8px;
+	}
+	.ion-md-food-friendly::before {
+    	content: "";
+		background:url('/assets/imgs/icon-friendly-menu.svg')no-repeat;
+		display:block;
+		width: 49px;
+		height: 36px;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 13px;
+		top: 2px;
+	}
 }

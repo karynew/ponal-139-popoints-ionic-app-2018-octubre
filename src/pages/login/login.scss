@@ -1,3 +1,26 @@
 page-login {
-
+	.content-wrapper {
+		background: #139980; /* Old browsers */
+	    background: -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%); /* FF3.6-15 */
+	    background: -webkit-linear-gradient(45deg, #139980 0%,#4fd194 100%); /* Chrome10-25,Safari5.1-6 */
+	    background: linear-gradient(45deg, #139980 0%,#4fd194 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	    position: relative;
+	}
+	.background-img {
+		background-image: url(../../assets/imgs/popoints-home-web.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	.button-wrapper {
+		padding: 10px 16px;
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+	}
 }

@@ -1,3 +1,4 @@
+import { NotificationsPage } from './../notifications/notifications';
 import { SpecialPage } from './../special/special';
 import { Tab4Page } from './../tab4/tab4';
 import { Tab3Page } from './../tab3/tab3';
@@ -28,11 +29,11 @@ export class MenuPage {
   @ViewChild(Nav) nav: Nav;
  
   pages: PageInterface[] = [
-    { title: 'Home', pageName: 'SpecialPage', tabComponent: 'SpecialPage', index: 0, icon: 'home' },
-    { title: 'Niveles', pageName: 'TabsPage', tabComponent: 'Tab2Page', index: 2, icon: 'nivel' },
-    { title: 'Tips', pageName: 'TabsPage', tabComponent: 'Tab3Page', index: 3, icon: 'tips' },
-    { title: 'Retos', pageName: 'TabsPage', tabComponent: 'Tab6Page', index: 4, icon: 'retos' },
-    { title: 'Notificaciones', pageName: 'TabsPage', tabComponent: 'Tab4Page', index: 5, icon: 'notificaciones' },
+    { title: 'Home', pageName: 'SpecialPage', icon: 'home' },
+    { title: 'Niveles', pageName: 'LevelsPage', icon: 'nivel' },
+    { title: 'Tips', pageName: 'AdvicePage',  icon: 'tips' },
+    { title: 'Retos', pageName: 'NotificationsPage',   icon: 'retos' },
+    { title: 'Notificaciones', pageName: 'NotificationsPage',icon: 'notificaciones' },
     { title: 'Salir', pageName: 'SpecialPage', icon: 'salir' },
   ];
  
