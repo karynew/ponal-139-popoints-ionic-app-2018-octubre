@@ -1,6 +1,6 @@
 
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Tabs } from 'ionic-angular';
 
 /**
  * Generated class for the SpecialPage page.
@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'special.html',
 })
 export class SpecialPage {
+	rootPage:any ='SpecialPage';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
