@@ -50,10 +50,25 @@
     .popoints-intro{
       display:flex;
       justify-content:center;
-      margin-top:10%;
+      align-items:flex-start;
+      height: 80px;
+      position: relative;
+      top: -66px;
       img{
-        width:55%;
+        width:230px;
+        height:260px;
       }
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      left: 0;
+      bottom: 63px;
+      width: 100%;
+    }
+    .pink{
+      background:$pinkTabs;
+    }
+    .space{
+      padding:0px 20px;
     }
  
   }
