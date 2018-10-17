@@ -17,10 +17,51 @@ page-login {
 		position: absolute;
 	}
 	.button-wrapper {
+		text-align: center;
 		padding: 10px 16px;
 		position: absolute;
 		bottom: 30px;
 		left: 0;
 		right: 0;
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
+.alert-md {
+	.alert-wrapper {
+		border-radius: 7px;
+	}
+	.alert-button-group {
+		padding: 8px 24px 20px;
+	}
+	.login-button {
+		background:$pinkTabs;
+		border-bottom: 3px solid $redButton;
+		color: $white;
+		border-radius: 5px;
+		margin: 0;
+	}
+	.cancel-button {
+		background:$white;
+		color: $greenButton;
+		//border: 1px solid $greenButton;
+		//border-bottom-width: 3px;
+		//border-radius: 5px;
+	}
+}
+.remember-password {
+	.alert-button-group {
+		padding: 8px 24px 20px;
+	}
+	.login-button, .cancel-button {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin: 5px auto;
+		.button-inner {
+			display: block;
+		}
 	}
 }
