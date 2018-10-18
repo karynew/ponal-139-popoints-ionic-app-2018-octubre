@@ -34,6 +34,22 @@
         background:$pinkTabs;
         overflow:hidden;
         padding: 10px;
+        position: absolute;
+        top: 15%;
+        left: 43%;
+      }
+      .slide-zoom {
+        text-align: center;
+        display: block;
+        width: 90%;
+        background: white;
+        border-radius: 23px;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        p{
+          text-align:center;
+        }
       }
     }
     .swiper-slide{
@@ -61,7 +77,7 @@
     }
     .swiper-container-horizontal > .swiper-pagination-bullets {
       left: 0;
-      bottom: 63px;
+      bottom: 100px;
       width: 100%;
     }
     .pink{

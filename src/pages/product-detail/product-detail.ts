@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListProductPage } from '../list-product/list-product';
+
 /**
- * Generated class for the Tab2Page page.
+ * Generated class for the ProductDetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { ListProductPage } from '../list-product/list-product';
 
 @IonicPage()
 @Component({
-  selector: 'page-tab2',
-  templateUrl: 'tab2.html',
+  selector: 'page-product-detail',
+  templateUrl: 'product-detail.html',
 })
-export class Tab2Page {
+export class ProductDetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Tab2Page');
+    console.log('ionViewDidLoad ProductDetailPage');
   }
-  goToListProduct(){
-    this.navCtrl.setRoot('ListProductPage');
-  }
+
 }
