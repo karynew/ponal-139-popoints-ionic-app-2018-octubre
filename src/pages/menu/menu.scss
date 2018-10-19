@@ -6,6 +6,47 @@ page-menu {
         width: 100%;
         display: block;
         height: 80px;
+        padding:10px;
+
+            .menu-img{
+                width: 30%;
+                margin: 0px;
+                padding: 5px;
+                width:60px;
+                height:60px;
+                border-radius:50%;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
+                background: #4fd194; /* Old browsers */
+                background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+               
+            .menu-item-icon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    margin-bottom: 0px;
+                    overflow:hidden;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+74 */
+                    background: #4fd194; /* Old browsers */
+                    background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 74%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 74%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(45deg, #4fd194 0%,#139980 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                        img{
+                            width:50px;
+                            height:50px;
+                            margin-top: 5px;
+                        }
+
+            }
+
+        }
     }
 
     .toolbar-md {

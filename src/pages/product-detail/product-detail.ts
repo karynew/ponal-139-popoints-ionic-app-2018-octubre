@@ -5,6 +5,7 @@ import { AlertController } from 'ionic-angular';
 
 
 
+
 /**
  * Generated class for the ProductDetailPage page.
  *
@@ -34,5 +35,7 @@ export class ProductDetailPage {
     });
     alert.present();
   }
+
+
 
 }
