@@ -17,6 +17,17 @@ page-list-product {
         text-align: center;
     }
     
+    button {
+        border: 0;
+        font-family: inherit;
+        font-style: inherit;
+        font-variant: inherit;
+        line-height: 1;
+        text-transform: none;
+        cursor: pointer;
+        -webkit-appearance: button;
+        padding:0px;
+    }
     .card-md {
         margin: 0px;
         border-radius: 2px;
@@ -73,6 +84,7 @@ page-list-product {
         font-weight: normal;
         line-height: 1.5;
         color: #222;
+            text-align: left;
     }
     
     .card-content-md, .card-md .item + .card-content-md {
@@ -83,6 +95,7 @@ page-list-product {
         font-size: 1.6rem;
         color: #222;
         padding: 8px 16px;
+        text-align: left;
     }
 }
 
