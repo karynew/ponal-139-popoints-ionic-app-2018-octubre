@@ -21,7 +21,6 @@ export class LoginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {}
 
   doSignUp(){
-  	//this.navCtrl.setRoot('MenuPage');
   	this.navCtrl.push(SignUpPage);
   }
   doLogin(){
@@ -30,24 +29,26 @@ export class LoginPage {
   		inputs: [
   			{
   				name: 'username',
-  				placeholder: 'Username'
+  				placeholder: 'Nombre de usuario'
   			},
   			{
   				name: 'password',
-  				placeholder: 'Password',
+  				placeholder: 'Contraseña',
   				type: 'password'
   			}
   		],
   		buttons: [
-  			{
-  				text: 'Cancel',
+  			{  
+				cssClass: 'cancel-button',
+				text: 'Cancelar',
   				role: 'cancel',
   				handler: data => {
   					console.log('Cancel clicked');
   				}
   			},
   			{
-  				text: 'Login',
+				cssClass: 'login-button',
+				text: 'Iniciar sesión',
   				handler: data => {
   					this.navCtrl.setRoot('MenuPage');
   					// if (User.isValid(data.username, data.password)) {
@@ -62,6 +63,38 @@ export class LoginPage {
   		]
   	});
   	alert.present();
+  }
+
+  forgotPass(){
+	let alert = this.alertCtrl.create({
+		cssClass: 'remember-password',
+		title: '¿Olvidaste tu contraseña?',
+		inputs: [
+			{
+				name: 'Correo Electrónico',
+				placeholder: 'Correo Electrónico'
+			}
+		],
+		buttons: [
+			{
+				cssClass: 'cancel-button',
+				text: 'Cancelar',
+				role: 'cancel',
+				handler: data => {
+					console.log('Cancel clicked');
+				}
+			},
+			{
+				cssClass: 'login-button',
+				text: 'Cambiar contraseña',
+				handler: data => {
+					console.log('Contraseña enviada');
+				}
+
+			}
+		]
+	});
+	alert.present();
   }
 
 
