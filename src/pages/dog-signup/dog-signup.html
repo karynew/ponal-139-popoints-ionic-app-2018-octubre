@@ -4,13 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
 
-  <ion-navbar>
-    <ion-title>dog-signup</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
 <ion-content padding>
@@ -21,24 +15,26 @@
       <ion-list>
         <ion-item id="inputFile">
           <ion-label>Foto de mi perro</ion-label>
-          <ion-input type="file"></ion-input>
+          <ion-input  type="file"></ion-input>
         </ion-item>
     
         <ion-item>
-          <ion-label floating>Nombre de mi perro:</ion-label>
-          <ion-input type="text"></ion-input>
+              <ion-label floating>Nombre de mi perro:</ion-label>
+              <ion-input type="text"></ion-input>
         </ion-item>
-    
-        <ion-item>
-          <ion-label floating>Peso</ion-label>
+      
+      <div class="form-box" col-12>
+          <ion-item col-6>
+            <ion-label floating>Peso</ion-label>
           <ion-input type="number"></ion-input>
         </ion-item>
-    
-        <ion-item>
-          <ion-label floating>Edad</ion-label>
+
+          <ion-item col-6>
+            <ion-label floating>Edad</ion-label>
           <ion-input type="number"></ion-input>
         </ion-item>
-    
+      </div>
+       
         <ion-item>
         <ion-label>Tamaño</ion-label>
           <ion-select>
@@ -59,7 +55,7 @@
         </ion-item>
 
         <div padding>
-            <button ion-button block (click)="goPhoto()">¡Bien hecho! Ya casi terminas</button>
+            <button class="btn-forms" block (click)="goPhoto()">¡Bien hecho! Ya casi terminas</button>
         </div>
     
       </ion-list>	
