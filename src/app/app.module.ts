@@ -10,7 +10,9 @@ import { MyApp } from './app.component';
 //import { DogSignupPage } from '../pages/dog-signup/dog-signup';
 import { CardsPage } from '../pages/cards/cards';
 import { SignUpPage } from '../pages/sign-up/sign-up';
-
+import { ListProductPage } from '../pages/list-product/list-product';
+import { Tab2Page } from '../pages/tab2/tab2';
+import { ProductDetailPage } from '../pages/product-detail/product-detail';
 @NgModule({
   declarations: [
     MyApp,

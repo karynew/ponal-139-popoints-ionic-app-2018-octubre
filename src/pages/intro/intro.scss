@@ -1,42 +1,90 @@
 .ios, .md {
- 
   page-intro {
-
-    ion-slide {
-  
-      -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-overflow-scrolling: touch;
-    will-change: scroll-position;
-    contain: size style layout;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+    ion-content{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
     background: #139980; /* Old browsers */
     background: -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #139980 0%,#4fd194 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #139980 0%,#4fd194 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    ion-header{
+      background:transparent; 
+    }
+    ion-slides {
+    height: 70%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
       .slide-zoom {
         text-align: center;
         display: block;
-        width: 50%;
+        width: 90%;
         background: white;
         border-radius: 23px;
         height: 50vh;
       }
+      .icon-slide{
+        margin:20px auto;
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        background:$pinkTabs;
+        overflow:hidden;
+        padding: 10px;
+        position: absolute;
+        top: 15%;
+        left: 43%;
+      }
+      .slide-zoom {
+        text-align: center;
+        display: block;
+        width: 90%;
+        background: white;
+        border-radius: 23px;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        p{
+          text-align:center;
+        }
+      }
     }
- 
+    .swiper-slide{
+      height:100%;
+    }
     ion-slide img {
       height: 70vh !important;
       width: auto !important;
     }
-
+    .swiper-pagination-bullet-active {
+      background:$pinkTabs;
+      opacity: 1;
+    }
     .popoints-intro{
       display:flex;
       justify-content:center;
-
+      align-items:flex-start;
+      height: 80px;
+      position: relative;
+      top: -66px;
       img{
-        width:25%;
+        width:230px;
+        height:260px;
       }
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+      left: 0;
+      bottom: 100px;
+      width: 100%;
+    }
+    .pink{
+      background:$pinkTabs;
+    }
+    .space{
+      padding:0px 20px;
     }
  
   }
