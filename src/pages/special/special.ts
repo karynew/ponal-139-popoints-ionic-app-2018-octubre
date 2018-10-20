@@ -1,6 +1,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Tabs } from 'ionic-angular';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 /**
  * Generated class for the SpecialPage page.

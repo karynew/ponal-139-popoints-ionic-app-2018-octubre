@@ -117,15 +117,17 @@ ion-app.md [padding] .scroll-content {
 
 .dog-contributions{
     width: 100%;
+    padding:15px;
     p{
         text-align: center;
         margin:5px;
     }
     .contributions-item{
-          width: 33%;
+          width: 100%;
           display:inline-flex;
         .contributions-item-package{
             text-align: center;
+            width: 100%;
             span{
                 font-size: 3rem;
                 font-weight:bolder;
@@ -136,11 +138,11 @@ ion-app.md [padding] .scroll-content {
                 margin:0px;
             }
             .dog-item{
-            width: 75px;
-            height: 75px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             background:$white;
-            margin: 15px;
+            margin: 15px auto 0px auto;
             display: flex;
             align-items: center;
             justify-content:center;
