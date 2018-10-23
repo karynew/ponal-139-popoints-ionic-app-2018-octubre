@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the Tab3Page page.
+ * Generated class for the Top10Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-tab3',
-  templateUrl: 'tab3.html',
+  selector: 'page-top10',
+  templateUrl: 'top10.html',
 })
-export class Tab3Page {
-	
+export class Top10Page {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Tab3Page');
+    console.log('ionViewDidLoad Top10Page');
   }
 
 }

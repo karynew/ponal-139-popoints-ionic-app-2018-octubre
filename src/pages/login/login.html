@@ -1,7 +1,18 @@
 <ion-content class="content-wrapper">
+	<div class="login-icon">
+	<div class="login-img">
+		 		<div class="login-item-home">
+		 			<img src="./assets/imgs/dog-notify.svg"/>
+		 		</div>
+	 	</div>
+	 </div>
+	 <div class="popoints-intro">
+      <img src="/assets/imgs/logo-popoints.svg"/>
+    </div>
 	<div class="background-img"></div>
 	<div class="button-wrapper">
-		<button block (click)="doSignUp()" class="btn-primary">Registrarse</button>
-		<button ion-button block (click)="doLogin()">Inicia sesión</button>
+		<button block (click)="doSignUp()" class="btn-primary btn-large">Registrarse</button>
+		<button block (click)="doLogin()" class="btn-white  btn-large">Inicia sesión</button>
+		<a (click)="forgotPass()">¿Olvidaste tu contraseña?</a>
 	</div>
 </ion-content>

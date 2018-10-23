@@ -1,0 +1,65 @@
+page-top10 {
+
+    .card-md {
+    margin: 0px;
+    border-radius: 2px;
+    width: calc(100% - 0px);
+    font-size: 1.4rem;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .label-md {
+            margin: 5px 8px 5px 0;
+            display: inline-flex;
+            .name-dog{
+                margin-left:20px;
+                display:flex;
+                align-items:center;
+                p{
+                    color:$white;
+                }
+                span{
+                    color:$white;
+                    margin-right:20px;
+                    font-weight:bolder;
+                }
+            }
+        }
+.notifications-img{
+        width: 30%;
+        margin: 0px;
+        padding: 5px;
+        width:35px;
+        height:35px;
+        border-radius:50%;
+           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+        background:$pinkTabs; /* Old browsers */
+       
+    .notifications-item-home{
+        width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-bottom: 0px;
+            overflow:hidden;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+74 */
+            background: #4fd194; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 74%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 74%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #4fd194 0%,#139980 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                img{
+                    width:50px;
+                    height:50px;
+                    margin-top: 5px;
+                }
+
+    }
+
+}
+}
