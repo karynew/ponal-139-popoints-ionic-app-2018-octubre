@@ -40,4 +40,6 @@ export class Tab1Page {
     this.type_popularidad='Popularidad';
   }
 
+  
+
 }
