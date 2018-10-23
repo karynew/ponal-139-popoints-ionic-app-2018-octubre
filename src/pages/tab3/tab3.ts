@@ -14,67 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tab3.html',
 })
 export class Tab3Page {
-	gallery :any =  [
-	{
-
-		"date": "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-		"images": [
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		},
-		{
-			"src" : "././assets/imgs/img.jpg",
-			"date":  "Mon Oct 22 10 2018  10:00:00 GTM+ 0700 (ICT)",
-			"location":""
-		}
-
-		]
-
-	}
-	]
-
+	
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
