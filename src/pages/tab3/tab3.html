@@ -12,13 +12,32 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     </ion-buttons>
-    <ion-title>Actividad</ion-title>
+    <ion-title>Galería</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-<ion-content padding>
- churumbelos
+<ion-content >
+  <ion-item-group>
+    <ion-item-divider>
+      {{gallery.date}}
+    </ion-item-divider>
+    <div *ngFor="let image of gallery.images; let j = index;">
+    <ion-row *ngIf="j % 4 === 0;">
+      <ion-col col-3 *ngIf="j < gallery.images.length ">
+        <img [src]="gallery.images[j].src">
+      </ion-col>
+        <ion-col col-3 *ngIf="j+1 < gallery.images.length ">
+        <img [src]="gallery.images[j+1].src">
+      </ion-col>
+        <ion-col col-3 *ngIf="j+2 < gallery.images.length ">
+        <img [src]="gallery.images[j+2].src">
+      </ion-col>
+        <ion-col col-3 *ngIf="j+3 < gallery.images.length ">
+        <img [src]="gallery.images[j+3].src">
+      </ion-col>
+    </ion-row>
+  </div>
+  </ion-item-group>
 </ion-content>
