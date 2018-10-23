@@ -52,6 +52,13 @@ page-tab4 {
                 margin:5px auto;
                 color: $white;
             }
+            .huge{
+                    font-weight:bolder;
+                    font-size: 2.5rem;
+            }
+            .bold{
+                font-weight:bolder;
+            }
             .dog-item-home{
             width: 70px;
             height: 70px;
@@ -62,6 +69,8 @@ page-tab4 {
             align-items: center;
             justify-content:center;
             margin-bottom: 0px;
+            border: 7px solid $pinkTabs;
+                
                 img{
                     width:50px;
                     height:50px;
@@ -89,6 +98,13 @@ page-tab4 {
                 margin:5px auto;
                 color:$white;
             }
+            .huge{
+                    font-weight:bolder;
+                    font-size: 2.5rem;
+            }
+            .bold{
+                font-weight:bolder;
+            }
             .dog-item-home{
             width: 70px;
             height: 70px;
@@ -99,10 +115,12 @@ page-tab4 {
             align-items: center;
             justify-content:center;
             margin-bottom: 0px;
+            border: 7px solid $pinkTabs;
                 img{
                     width:50px;
                     height:50px;
                 }
+                
             }
         }
 

@@ -31,7 +31,7 @@ export class MenuPage {
   pages: PageInterface[] = [
     { title: 'Home', pageName: 'SpecialPage', icon: 'home' },
     { title: 'Niveles', pageName: 'LevelsPage', icon: 'nivel' },
-    { title: 'Tips', pageName: 'AdvicePage',  icon: 'tips' },
+    { title: 'Consejos', pageName: 'AdvicePage',  icon: 'tips' },
     { title: 'Retos', pageName: 'NotificationsPage',   icon: 'retos' },
     { title: 'Notificaciones', pageName: 'NotificationsPage',icon: 'notificaciones' },
     { title: 'Salir', pageName: 'SpecialPage', icon: 'salir' },
