@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Top10Page } from '../top10/top10';
 
 
 /**
@@ -24,7 +25,9 @@ export class Tab4Page {
   }
 
   goTotop10(){
-    this.navCtrl.setRoot('Top10Page');
+    this.navCtrl.push('Top10Page');
   }
+
+  
 
 }

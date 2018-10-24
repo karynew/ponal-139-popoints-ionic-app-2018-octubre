@@ -32,8 +32,8 @@ export class MenuPage {
     { title: 'Home', pageName: 'SpecialPage', icon: 'home' },
     { title: 'Niveles', pageName: 'LevelsPage', icon: 'nivel' },
     { title: 'Consejos', pageName: 'AdvicePage',  icon: 'tips' },
-    { title: 'Retos', pageName: 'NotificationsPage',   icon: 'retos' },
-    { title: 'Notificaciones', pageName: 'NotificationsPage',icon: 'notificaciones' },
+    { title: 'Retos', pageName: 'Tab1Page',  icon: 'retos' },
+    { title: 'Notificaciones', pageName: 'NotificationsPage',icon:'notificaciones' },
     { title: 'Salir', pageName: 'SpecialPage', icon: 'salir' },
   ];
  
@@ -53,7 +53,7 @@ export class MenuPage {
     } else {
       // Tabs are not active, so reset the root page 
       // In this case: moving to or from SpecialPage
-      this.nav.setRoot(page.pageName, params);
+      this.navCtrl.push(page.pageName, params);
     }
   }
  
@@ -74,5 +74,7 @@ export class MenuPage {
     }
     return;
   }
+
+
  
 }
