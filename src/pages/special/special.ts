@@ -27,5 +27,8 @@ export class SpecialPage {
   goToProfile(){
     this.navCtrl.setRoot('Tab1Page');
   }
+  goBack(){
+        this.navCtrl.pop();
+  } 
 
 }

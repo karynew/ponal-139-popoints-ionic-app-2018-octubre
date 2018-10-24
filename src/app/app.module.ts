@@ -13,12 +13,13 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ListProductPage } from '../pages/list-product/list-product';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
+
 @NgModule({
   declarations: [
     MyApp,
     //DogSignupPage,
     CardsPage,
-    SignUpPage
+    SignUpPage,
   ],
   imports: [
     BrowserModule,

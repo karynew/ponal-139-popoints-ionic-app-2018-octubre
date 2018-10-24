@@ -9,6 +9,14 @@ page-top10 {
     transform: translateZ(0);
     }
 
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color:$white;
+    background-color: transparent;
+    &:hover{
+     color:$white;
+    }
+    }
+
     .card-md {
     margin: 0px;
     border-radius: 2px;
