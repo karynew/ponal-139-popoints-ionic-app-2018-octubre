@@ -24,5 +24,8 @@ export class SpecialPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SpecialPage');
   }
+  goToProfile(){
+    this.navCtrl.setRoot('Tab1Page');
+  }
 
 }
