@@ -22,4 +22,7 @@ export class ImgDetailPage {
     console.log('ionViewDidLoad ImgDetailPage');
   }
 
+  goBack(){
+        this.navCtrl.pop();
+  } 
 }

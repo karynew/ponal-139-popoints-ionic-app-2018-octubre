@@ -36,6 +36,9 @@ export class ProductDetailPage {
     alert.present();
   }
 
+ goBack(){
+        this.navCtrl.pop();
+  } 
 
 
 }
