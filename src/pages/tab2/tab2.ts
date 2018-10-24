@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListProductPage } from '../list-product/list-product';
+import { ProductDetailPage } from '../product-detail/product-detail';
 /**
  * Generated class for the Tab2Page page.
  *
@@ -22,6 +23,6 @@ export class Tab2Page {
     console.log('ionViewDidLoad Tab2Page');
   }
   goToListProduct(){
-    this.navCtrl.setRoot('ListProductPage');
+    this.navCtrl.push('ListProductPage');
   }
 }
