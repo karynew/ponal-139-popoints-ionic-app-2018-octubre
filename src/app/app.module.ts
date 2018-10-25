@@ -13,6 +13,7 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ListProductPage } from '../pages/list-product/list-product';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
+import { AdviceModalPage } from '../pages/advice-modal/advice-modal';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProductDetailPage } from '../pages/product-detail/product-detail';
     //DogSignupPage,
     CardsPage,
     SignUpPage,
+    AdviceModalPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ProductDetailPage } from '../pages/product-detail/product-detail';
     MyApp,
     //DogSignupPage,
     CardsPage,
-    SignUpPage
+    SignUpPage,
+    AdviceModalPage
   ],
   providers: [
     StatusBar,
