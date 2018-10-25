@@ -25,7 +25,7 @@ export class SpecialPage {
     console.log('ionViewDidLoad SpecialPage');
   }
   goToProfile(){
-    this.navCtrl.setRoot('Tab1Page');
+    this.navCtrl.push('Tab1Page');
   }
   goBack(){
         this.navCtrl.pop();

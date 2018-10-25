@@ -84,6 +84,14 @@ page-levels {
 }
 .notifications-content{
     width: 70%;
+
+    .level-icon{
+        background: url(../assets/imgs/icon-star-home.svg);
+        width: 30px;
+        display: inline-block;
+        height: 30px;
+        background-size: cover;
+    }
 }
 
 .card-md p {
