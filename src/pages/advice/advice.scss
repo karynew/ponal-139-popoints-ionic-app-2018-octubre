@@ -83,6 +83,28 @@ page-advice {
 }
 .notifications-content{
     width: 70%;
+
+    .ion-md-thumbs-up:before {
+      content: "";
+      background:url('../assets/imgs/icon-popularity-profile.svg');
+      width: 30px;
+      display: block;
+      height:25px;
+      background-size:100% ;
+    }
+    .ion-md-text:before {
+      content: "";
+      background:url('../assets/imgs/share.svg');
+      width: 30px;
+      display: block;
+      height:30px;
+      background-size:100% ;
+    }
+    .button-small-md {
+    height: 2.1em;
+    font-size: 1.3rem;
+    padding: 0 0.0em;
+    }
 }
 
 .card-md p {
@@ -93,6 +115,10 @@ page-advice {
     color: #222;
 }
 
+.buttons-advice{
+    width: 100%;
+    display:flex;
+}
 .card-content-md, .card-md .item + .card-content-md {
     padding-top: 0;
 }
@@ -101,6 +127,38 @@ page-advice {
     font-size: 1.6rem;
     color: #222;
     padding: 8px 16px;
+}
+
+.btn-pink {
+    background: $pinkTabs;
+    margin: 15px auto;
+    display: block;
+    border-bottom: 5px solid #b30629;
+    padding: 1.2em 1.1em;
+    text-align: center;
+    color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+.btn-w {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
+  background: #4fd194; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin: 15px auto;
+    display: block;
+    border-bottom: 5px solid #015656;
+    padding: 1.2em 1.1em;
+    text-align: center;
+    color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.4rem;
+ 
 }
 
 }

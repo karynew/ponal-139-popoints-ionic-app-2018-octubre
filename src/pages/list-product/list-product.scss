@@ -102,6 +102,20 @@ page-list-product {
     
     .card-content-md, .card-md .item + .card-content-md {
         padding-top: 0;
+        .popoints-number{
+            p{
+                color:$pinkTabs;
+                font-weight:bolder;
+                font-size:1.4rem;
+            }
+        }
+        .awward-units{
+            p{
+                color:$darkMediumGreen;
+                font-weight:bolder;
+                font-size:1.4rem;
+            }
+        }
     }
     
     .card-header-md {
