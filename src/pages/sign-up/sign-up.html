@@ -14,22 +14,27 @@
   
         <ion-item>
           <ion-label floating>Nombre del amo</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="dataPeople.firstName" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Apellido del amo</ion-label>
+          <ion-input type="text" [(ngModel)]="dataPeople.lastName" name="lastName"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Correo electrónico</ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-input type="email" [(ngModel)]="dataPeople.emailUser" name="email"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Número de Documento</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number" [(ngModel)]="dataPeople.identificationNumber" name="identification"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Password</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="dataPeople.passwordUser" name="password"></ion-input>
         </ion-item>
   
         <ion-item>
@@ -43,7 +48,7 @@
         </ion-item>
   
         <div padding>
-            <button class="btn-forms" block (click)="doHome()">Registrarse</button>
+            <button class="btn-forms" block (click)="createPeople()">Registrarse</button>
         </div>
   
       </ion-list>

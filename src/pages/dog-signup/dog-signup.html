@@ -21,45 +21,45 @@
       <ion-list>
         <ion-item id="inputFile">
           <ion-label>Foto de mi perro</ion-label>
-          <ion-input type="file"></ion-input>
+          <ion-input type="file" [(ngModel)]="postData.pictureDog" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
     
         <ion-item>
           <ion-label floating>Nombre de mi perro:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="postData.nameDog" name="name"></ion-input>
         </ion-item>
     
         <ion-item>
           <ion-label floating>Peso</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number" [(ngModel)]="postData.weigthDog" name="weight"></ion-input>
         </ion-item>
     
         <ion-item>
           <ion-label floating>Edad</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number" [(ngModel)]="postData.popointsDogs" name="popoints"></ion-input>
         </ion-item>
     
         <ion-item>
         <ion-label>Tamaño</ion-label>
-          <ion-select>
-              <ion-option value="p">Pequeño</ion-option>
-              <ion-option value="m">Mediano</ion-option>
-              <ion-option value="g">Grande</ion-option>
+          <ion-select [(ngModel)]="postData.sizeDog" name="size">
+              <ion-option value="pequeño">Pequeño</ion-option>
+              <ion-option value="mediano">Mediano</ion-option>
+              <ion-option value="grande">Grande</ion-option>
           </ion-select>
         </ion-item>
     
         <ion-item>
           <ion-label floating>Cumpleaños</ion-label>
-          <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="postData.birthayDog" name="birthay"></ion-datetime>
         </ion-item>
         
         <ion-item>
           <ion-label floating>Número de placa</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number" [(ngModel)]="postData.numberPlate" name="number"></ion-input>
         </ion-item>
 
         <div padding>
-            <button ion-button block (click)="goPhoto()">¡Bien hecho! Ya casi terminas</button>
+            <button ion-button block (click)="createDog()">¡Bien hecho! Ya casi terminas</button>
         </div>
     
       </ion-list>	
