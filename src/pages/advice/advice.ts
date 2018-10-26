@@ -22,4 +22,8 @@ export class AdvicePage {
     console.log('ionViewDidLoad AdvicePage');
   }
 
+  goBack(){
+        this.navCtrl.pop();
+  }
+
 }

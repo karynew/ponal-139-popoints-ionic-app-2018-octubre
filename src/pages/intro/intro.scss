@@ -36,7 +36,7 @@
         padding: 10px;
         position: absolute;
         top: 15%;
-        left: 43%;
+   
       }
       .slide-zoom {
         text-align: center;
@@ -47,6 +47,7 @@
         height: 50vh;
         display: flex;
         align-items: center;
+        justify-content: center;
         p{
           text-align:center;
         }

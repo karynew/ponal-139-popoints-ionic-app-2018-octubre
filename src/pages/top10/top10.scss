@@ -1,56 +1,62 @@
-page-notifications {
-
+page-top10 {
+    
     .bar-buttons-md {
-    -webkit-box-ordinal-group: 5;
+    -webkit-box-ordinal-group: 1;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    justify-content: initial;
-}
+    }
 
-.toolbar-background-md {
-     
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
-        background: #4fd194; /* Old browsers */
-        background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color:$white;
+    background-color: transparent;
+    &:hover{
+     color:$white;
+    }
+    }
 
-.toolbar-title-md {
-    padding: 0px;
-    font-size: 2rem;
-    font-weight: 500;
-    color: $white;
-    text-align: center;
-}
-
-.card-md {
+    .card-md {
     margin: 0px;
     border-radius: 2px;
-    width: calc(100% - 20px);
+    width: calc(100% - 0px);
     font-size: 1.4rem;
-    background: $white;
-    width: 100%;
-    border-bottom:1px solid $grayBorder;
-    display: flex;
-}
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .label-md {
+            margin: 5px 8px 5px 0;
+            display: inline-flex;
+            .name-dog{
+                margin-left:20px;
+                display:flex;
+                align-items:center;
+                p{
+                    color:$white;
+                }
+                span{
+                    color:$white;
+                    margin-right:20px;
+                    font-weight:bolder;
+                }
+            }
+        }
 .notifications-img{
         width: 30%;
-        margin: 10px;
+        margin: 0px;
         padding: 5px;
-        width:60px;
-        height:60px;
+        width:35px;
+        height:35px;
         border-radius:50%;
            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
         background:$pinkTabs; /* Old browsers */
        
     .notifications-item-home{
-        width: 50px;
-            height: 50px;
+        width: 25px;
+            height: 25px;
             border-radius: 50%;
             margin: 0px;
             display: flex;
@@ -66,35 +72,11 @@ page-notifications {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
                 img{
                     width:50px;
-                    height:50px;
+                    height:30px;
                     margin-top: 5px;
                 }
 
     }
 
 }
-.notifications-content{
-    width: 70%;
-}
-
-.card-md p {
-    margin: 0 0 2px;
-    font-size: 1REM;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #222;
-}
-
-.card-content-md, .card-md .item + .card-content-md {
-    padding-top: 0;
-}
-
-.card-header-md {
-    font-size: 1.6rem;
-    color: #222;
-    padding: 8px 16px;
-}
-
-
-
 }

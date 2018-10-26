@@ -11,4 +11,128 @@ page-tab4 {
 	    -ms-flex-pack: initial;
 	    justify-content: initial;
 	}
+
+	.content-md{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
+  background: #4fd194; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 
+		.dog-contributions-home{
+    width: 100%;
+    margin:0px auto;
+    padding: 10px;
+    p{
+        text-align: center;
+        margin:5px;
+    }
+    .contributions-item{
+          width: 100%;
+          display:inline-flex;
+        .contributions-item-package{
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            display:flex;
+            justify-content:center;
+            span{
+                font-size: 3rem;
+                font-weight:bolder;
+            }
+            p{
+                font-size: 1rem;
+                padding:0px;
+                margin:0px;
+            }
+            .home-info{
+            	font-size: 1.5rem;
+                padding:0px;
+                margin:5px auto;
+                color: $white;
+            }
+            .huge{
+                    font-weight:bolder;
+                    font-size: 2.5rem;
+            }
+            .bold{
+                font-weight:bolder;
+            }
+            .dog-item-home{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background:$white;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-bottom: 0px;
+            border: 7px solid $pinkTabs;
+            overflow:hidden;
+                
+                img{
+                   width:70px;
+                    height:60px;
+                    margin-top:5px;
+                }
+            }
+        }
+
+            .gold-item{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content:center;
+            span{
+                font-size: 3rem;
+                font-weight:bolder;
+            }
+            p{
+                font-size: 1rem;
+                padding:0px;
+                margin:0px;
+            }
+            .home-info{
+            	font-size: 1.5rem;
+                padding:0px;
+                margin:5px auto;
+                color:$white;
+            }
+            .huge{
+                    font-weight:bolder;
+                    font-size: 2.5rem;
+            }
+            .bold{
+                font-weight:bolder;
+            }
+            .dog-item-home{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background:$white;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-bottom: 0px;
+            border: 7px solid $pinkTabs;
+            overflow:hidden;
+                img{
+                    width:70px;
+                    height:60px;
+                    margin-top:5px;
+                }
+                
+            }
+        }
+
+    }
+
+}
+
+}
+	
+
 }

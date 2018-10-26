@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Top10Page } from '../top10/top10';
+
 
 /**
  * Generated class for the Tab4Page page.
@@ -21,5 +23,11 @@ export class Tab4Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tab4Page');
   }
+
+  goTotop10(){
+    this.navCtrl.push('Top10Page');
+  }
+
+  
 
 }

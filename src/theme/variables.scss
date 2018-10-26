@@ -102,7 +102,9 @@ $greenMenuBorder:#4FD194;
 $borderFacebook:#172e78;
 $redButton:#b30629;
 $grayLight:#cccccc;
-
+$orangePlus:#d34d42;
+$orangeDark:#bf3b31;
+$grayText:#5a5a5a;
 
 // verdes del gradient - verder-button awwards
 // --------------------------------------------------
@@ -116,12 +118,14 @@ $greenButton: #015656;
 
 $grayBorder:#f5f5f5;
 
+
+
 //---------------------------------------------------
 //---buttons-forms----
 
  .btn-forms{
   width: 100%;
-  margin: 15px auto;
+  margin: 5px auto;
   display: block;
   border-bottom: 5px solid $darkGreen;
   padding: 1.2em 1.1em;
@@ -142,7 +146,6 @@ $grayBorder:#f5f5f5;
 
 .btn-primary {
   background:$pinkTabs;
-  width: 100%;
   margin: 15px auto;
   display: block;
   border-bottom: 5px solid $redButton;
@@ -155,10 +158,17 @@ $grayBorder:#f5f5f5;
   font-size: 1.4rem;
 }
 
+.btn-m{
+   width:49%;
+   margin-top:5px;
+}
+
+.btn-large{
+   width: 100%;
+}
 .btn-facebook {
   background:$blueFacebbok;
-  width: 100%;
-  margin: 15px auto;
+  margin: 0px auto;
   display: block;
   border-bottom: 5px solid $borderFacebook;
   padding: 1.2em 1.1em;
@@ -167,21 +177,32 @@ $grayBorder:#f5f5f5;
   color: $white;
   border-radius: 5px;
   overflow: hidden;
-  height: 3.6rem;
   font-size: 1.4rem;
 }
 .btn-white {
   background:$white;
-  width: 100%;
-  margin: 15px auto;
+  margin: 0px auto;
   display: block;
   border-bottom: 5px solid $greenButton;
-  padding: 0.5em 1.1em;
+  padding: 1.5em 1.1em;
   text-align: center;
   text-transform: uppercase;
   color: $darkGreen;
-  border-radius: 5px;
   border-radius: 8px;
+  overflow: hidden;
+  font-size: 1.4rem;
+  line-height:0.3em;
+}
+.btn-google {
+  background:$orangePlus;
+  margin: 0px auto;
+  display: block;
+  border-bottom: 5px solid $orangeDark;
+  padding: 1.2em 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
   overflow: hidden;
   font-size: 1.4rem;
 }

@@ -21,7 +21,7 @@ import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
     MyApp,
     //DogSignupPage,
     CardsPage,
-    SignUpPage
+    SignUpPage,
   ],
   imports: [
     BrowserModule,
