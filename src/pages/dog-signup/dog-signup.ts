@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DogServiceProvider } from '../../providers/dog-service/dog-service';
 
 //import { CameraViewPage } from '../camera-view/camera-view';
 
@@ -17,7 +18,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DogSignupPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  postData = {
+    "dogId": 1,
+    "nameDog": "",
+    "pictureDog": "",
+    "weigthDog": 0,
+    "sizeDog": "",
+    "birthayDog": "",
+    "popointsDogs": 0,
+    "numberPlate": "",
+    "codeDog": "uno",
+    "levelIdlevel": 1,
+    "numberLevel": "uno"
+  }
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dogService: DogServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -26,6 +41,16 @@ export class DogSignupPage {
 
   goPhoto() {
   	this.navCtrl.setRoot('CameraViewPage');
+  }
+
+  createDog(){
+    this.dogService.postDogs(this.postData)
+      .subscribe(data => {
+        console.log(data['_body']);
+      }, error => {
+        console.log(error);
+      });
+    console.log(this.postData);
   }
 
 }

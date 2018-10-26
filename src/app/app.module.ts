@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Camera } from '@ionic-native/camera';
+import { HttpClientModule } from '@angular/common/http';
 //import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
@@ -13,7 +14,8 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ListProductPage } from '../pages/list-product/list-product';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
-
+import { DogServiceProvider } from '../providers/dog-service/dog-service';
+import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +26,7 @@ import { ProductDetailPage } from '../pages/product-detail/product-detail';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule
     //IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -37,7 +40,9 @@ import { ProductDetailPage } from '../pages/product-detail/product-detail';
     StatusBar,
     SplashScreen,
     Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DogServiceProvider,
+    OwnerServiceProvider
   ]
 })
 export class AppModule {}

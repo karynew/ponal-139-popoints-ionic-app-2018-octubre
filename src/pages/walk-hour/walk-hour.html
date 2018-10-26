@@ -1,0 +1,30 @@
+<ion-content padding>
+    <ion-title>
+      <h2>Hora de ir al baño</h2>
+    </ion-title>
+    <form>
+      <ion-item>
+        <ion-label>Número de veces que tu mascota hace popo al día</ion-label>
+        <ion-select>
+            <ion-option value="1">1</ion-option>
+            <ion-option value="2">2</ion-option>
+            <ion-option value="3">3</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la mañana:</ion-label>
+        <ion-datetime displayFormat="h/m/a"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la tarde:</ion-label>
+        <ion-datetime displayFormat="h/m/a"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la noche:</ion-label>
+        <ion-datetime displayFormat="h/m/a"></ion-datetime>
+      </ion-item>
+      <div padding>
+          <button ion-button block >¡Bien hecho! Terminaste</button>
+      </div>    
+    </form>
+</ion-content>
