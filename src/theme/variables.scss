@@ -206,3 +206,24 @@ $grayBorder:#f5f5f5;
   overflow: hidden;
   font-size: 1.4rem;
 }
+
+.alert-md {
+	.alert-wrapper {
+		border-radius: 7px;
+    .alert-button-group {
+      padding: 8px 24px 20px;
+    }
+    .login-button {
+      background:$pinkTabs;
+      border-bottom: 3px solid $redButton;
+      color: $white;
+      border-radius: 5px;
+      margin: 0;
+    }
+    .cancel-button {
+      background:$white;
+      color: $greenButton;
+    }
+	}
+}
+
