@@ -114,14 +114,21 @@ page-advice {
     line-height: 1.5;
     color: #222;
 }
-
+.btn-medium {
+    width:49%;
+    margin-top:none;
+    /* margin-top: 5px; */
+}
 .buttons-advice{
     width: 100%;
     display:flex;
+    padding:0px;
+    margin-top:10px;
 }
 .card-content-md, .card-md .item + .card-content-md {
     padding-top: 0;
 }
+
 
 .card-header-md {
     font-size: 1.6rem;
@@ -132,7 +139,6 @@ page-advice {
 .btn-pink {
     background: $pinkTabs;
     margin: 15px auto;
-    display: block;
     border-bottom: 5px solid #b30629;
     padding: 1.2em 1.1em;
     text-align: center;
@@ -140,6 +146,7 @@ page-advice {
     border-radius: 8px;
     overflow: hidden;
     font-size: 1.4rem;
+   line-height: 1.4rem;
 }
 
 .btn-w {

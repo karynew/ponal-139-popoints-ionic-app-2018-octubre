@@ -123,6 +123,23 @@ $grayBorder:#f5f5f5;
 //---------------------------------------------------
 //---buttons-forms----
 
+.btn-green{ 
+  margin: 15px auto;
+  border-bottom: 5px solid $darkGreen;
+  padding: 1.0rem 1.1rem;
+  text-align: center;
+  color: $white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1.4rem;
+   line-height: 1.4rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fd194+0,139980+100 */
+  background: #4fd194; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #4fd194 0%, #139980 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #4fd194 0%,#139980 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #4fd194 0%,#139980 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
  .btn-forms{
   width: 100%;
   margin: 5px auto;
