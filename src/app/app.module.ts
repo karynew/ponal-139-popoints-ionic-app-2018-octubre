@@ -16,7 +16,7 @@ import { Tab2Page } from '../pages/tab2/tab2';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
 
 
-
+import { AdviceTermsPage } from '../pages/advice-terms/advice-terms';
 import { AdviceModalPage } from '../pages/advice-modal/advice-modal';
 import { DogServiceProvider } from '../providers/dog-service/dog-service';
 import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
@@ -27,7 +27,8 @@ import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
     //DogSignupPage,
     CardsPage,
     SignUpPage,
-     AdviceModalPage
+     AdviceModalPage,
+     AdviceTermsPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
     //DogSignupPage,
     CardsPage,
     SignUpPage,
-     AdviceModalPage
+     AdviceModalPage,
+     AdviceTermsPage
   ],
   providers: [
     StatusBar,
