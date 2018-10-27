@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import {AdviceModalPage} from '../advice-modal/advice-modal';
+import {AdviceTermsPage} from '../advice-terms/advice-terms';
 
 /**
  * Generated class for the AdvicePage page.
@@ -22,6 +23,11 @@ export class AdvicePage {
   openModal(){
     let openModal = this.modalController.create(AdviceModalPage);
     openModal.present();
+  }
+
+  openModalTerms(){
+    let openModalTerms = this.modalController.create(AdviceTermsPage);
+    openModalTerms.present();
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad AdvicePage');
