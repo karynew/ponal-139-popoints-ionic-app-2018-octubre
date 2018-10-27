@@ -22,4 +22,8 @@ export class Top10Page {
     console.log('ionViewDidLoad Top10Page');
   }
 
+  goBack(){
+        this.navCtrl.pop();
+  } 
+
 }

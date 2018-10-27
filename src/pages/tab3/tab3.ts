@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ImgDetailPage } from '../img-detail/img-detail';
 /**
  * Generated class for the Tab3Page page.
  *
@@ -21,5 +21,11 @@ export class Tab3Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tab3Page');
   }
+
+  goToimgDetail(){
+    this.navCtrl.push('ImgDetailPage');
+  }
+
+  
 
 }

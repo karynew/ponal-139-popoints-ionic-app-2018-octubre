@@ -21,5 +21,8 @@ export class LevelsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LevelsPage');
   }
+  goBack(){
+        this.navCtrl.pop();
+  }
 
 }

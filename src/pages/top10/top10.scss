@@ -1,4 +1,21 @@
 page-top10 {
+    
+    .bar-buttons-md {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color:$white;
+    background-color: transparent;
+    &:hover{
+     color:$white;
+    }
+    }
 
     .card-md {
     margin: 0px;
@@ -24,6 +41,7 @@ page-top10 {
                     color:$white;
                     margin-right:20px;
                     font-weight:bolder;
+                    width: 30px;
                 }
             }
         }
@@ -55,7 +73,7 @@ page-top10 {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fd194', endColorstr='#139980',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
                 img{
                     width:50px;
-                    height:50px;
+                    height:30px;
                     margin-top: 5px;
                 }
 

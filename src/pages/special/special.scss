@@ -22,7 +22,9 @@ page-special {
     display: flex;
     align-items:center;
 }
-
+.btn-profile{
+    background:transparent;
+}
 .card-title-md {
     display: block;
     font-size: 2.4rem;
@@ -36,12 +38,12 @@ ion-app.md [padding] .scroll-content {
     padding: 0px;
 }
 .bar-buttons-md {
-    -webkit-box-ordinal-group: 5;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-transform: translateZ(3);
+    transform: translateZ(3);
     justify-content: initial;
 }
 
@@ -67,6 +69,7 @@ ion-app.md [padding] .scroll-content {
 
 .dog-info{
      color:$tabsGreen;
+     width:60%;
     h1{
         font-size:2rem;
     }
@@ -102,6 +105,10 @@ ion-app.md [padding] .scroll-content {
 .home-card{
 	margin-top:20px;
 }
+.product{
+    width:100%;
+}
+
 .card-md {
     margin:0px;
     border-radius: 2px;
@@ -117,7 +124,7 @@ ion-app.md [padding] .scroll-content {
     line-height: 1.5;
     display:flex;
     p{
-        width:60%;
+        width:100%;
     }
 }
 
@@ -159,9 +166,10 @@ ion-app.md [padding] .scroll-content {
             align-items: center;
             justify-content:center;
             margin-bottom: 0px;
+            overflow:hidden;
                 img{
-                    width:50px;
-                    height:50px;
+                    width: 80%;
+                    height: 80%;
                 }
             }
         }

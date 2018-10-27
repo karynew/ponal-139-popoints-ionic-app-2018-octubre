@@ -24,5 +24,11 @@ export class SpecialPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SpecialPage');
   }
+  goToProfile(){
+    this.navCtrl.push('Tab1Page');
+  }
+  goBack(){
+        this.navCtrl.pop();
+  } 
 
 }
