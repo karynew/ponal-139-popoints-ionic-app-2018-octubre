@@ -22,7 +22,7 @@ export class SignUpPage {
     "lastName": "",
     "emailUser": "",
     "passwordUser": "",
-    "peopleId": 2,
+    "peopleId": 3,
     "identificationNumber": 0
   }
 

@@ -27,13 +27,19 @@ export class DogSignupPage {
     "birthayDog": "",
     "popointsDogs": 0,
     "numberPlate": "",
-    "codeDog": "uno",
+    /* "codeDog": "uno",
     "levelIdlevel": 1,
-    "numberLevel": "uno"
+    "numberLevel": "uno" */
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public dogService: DogServiceProvider) {
-  }
+  dataTest = this.dogService.getLevelDogs()
+  .subscribe(dataLevel => {
+    console.log(dataLevel[0].numberLevel);
+  }, error => {
+    console.log(error);
+  });
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dogService: DogServiceProvider) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DogSignupPage');
@@ -47,10 +53,10 @@ export class DogSignupPage {
     this.dogService.postDogs(this.postData)
       .subscribe(data => {
         console.log(data['_body']);
+        this.navCtrl.setRoot('WalkHourPage');
       }, error => {
         console.log(error);
       });
-    console.log(this.postData);
   }
 
 }
