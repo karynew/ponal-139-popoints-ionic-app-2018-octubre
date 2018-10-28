@@ -15,7 +15,7 @@ page-product-detail {
     justify-content: initial;
 }
 .card-md {
-	padding:10px;
+	padding:0px;
     margin: 0px; 
     border-radius: 2px;
     width: 100% ;
@@ -34,10 +34,11 @@ page-product-detail {
 }
 	.bg-product{
 		background:$grayLight;
+		padding: 20px;
 		img{
 			max-width:100%;
 			width: 190px;
-    		margin: 40px auto 0px auto;
+    		margin: 60px auto 0px auto;
 		}
 	}
 	.product-items{

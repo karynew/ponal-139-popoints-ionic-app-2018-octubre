@@ -1,0 +1,30 @@
+<ion-content padding>
+    <ion-title>
+      <h2>Hora de ir al baño</h2>
+    </ion-title>
+    <form>
+      <ion-item>
+        <ion-label>Número de veces que tu mascota hace popo al día</ion-label>
+        <ion-select [(ngModel)]="walkData.numberWalk" name="number">
+            <ion-option value="1">1</ion-option>
+            <ion-option value="2">2</ion-option>
+            <ion-option value="3">3</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la mañana:</ion-label>
+        <ion-datetime displayFormat="h/m/a" [(ngModel)]="walkData.morningHour" name="morning"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la tarde:</ion-label>
+        <ion-datetime displayFormat="h/m/a" [(ngModel)]="walkData.afternoonHour" name="afternoon"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>En la noche:</ion-label>
+        <ion-datetime displayFormat="h/m/a" [(ngModel)]="walkData.nightHour" name="night"></ion-datetime>
+      </ion-item>
+      <div padding>
+          <button class="btn-forms" block (click)="goToMenu()">¡Bien hecho! Terminaste</button>
+      </div>    
+    </form>
+</ion-content>
