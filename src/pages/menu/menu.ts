@@ -29,12 +29,12 @@ export class MenuPage {
   @ViewChild(Nav) nav: Nav;
  
   pages: PageInterface[] = [
-    { title: 'Home', pageName: 'SpecialPage', icon: 'home' },
+    //{ title: 'Home', pageName: 'SpecialPage', icon: 'home' },
     { title: 'Niveles', pageName: 'LevelsPage', icon: 'nivel' },
     { title: 'Consejos', pageName: 'AdvicePage',  icon: 'tips' },
-    { title: 'Retos', pageName: 'Tab1Page',  icon: 'retos' },
-    { title: 'Notificaciones', pageName: 'NotificationsPage',icon:'notificaciones' },
-    { title: 'Salir', pageName: 'SpecialPage', icon: 'salir' },
+    //{ title: 'Retos', pageName: 'Tab1Page',  icon: 'retos' },
+    //{ title: 'Notificaciones', pageName: 'NotificationsPage',icon:'notificaciones' },
+    { title: 'Salir', pageName: 'LoginPage', icon: 'salir' },
   ];
  
   constructor(public navCtrl: NavController) { }
