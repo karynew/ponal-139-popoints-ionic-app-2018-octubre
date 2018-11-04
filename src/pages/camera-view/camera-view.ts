@@ -15,7 +15,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
   templateUrl: 'camera-view.html',
 })
 export class CameraViewPage {
-  dogPhoto:any;
+  dogPhoto: string = null;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera) {
   }
@@ -28,15 +28,15 @@ export class CameraViewPage {
 	  const options: CameraOptions = {
 	  	quality: 100,
 	  	destinationType: this.camera.DestinationType.FILE_URI,
-	  	encodingType: this.camera.EncodingType.JPEG,
+			encodingType: this.camera.EncodingType.JPEG,
+			targetWidth: 1000,
+      targetHeight: 1000,
 	  	mediaType: this.camera.MediaType.PICTURE
 	  }
 	  this.camera.getPicture(options).then((imageData) => {
-	  // imageData is either a base64 encoded string or a file URI
-	  // If it's base64 (DATA_URL):
-	  this.dogPhoto = 'data:image/jpeg;base64,' + imageData;
+	  	this.dogPhoto = `data:image/jpeg;base64,${imageData}`;
 	  }, (err) => {
-		 // Handle error
+			//console.error( error );
 	  });
   }
 }
