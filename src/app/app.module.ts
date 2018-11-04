@@ -20,6 +20,7 @@ import { AdviceTermsPage } from '../pages/advice-terms/advice-terms';
 import { AdviceModalPage } from '../pages/advice-modal/advice-modal';
 import { DogServiceProvider } from '../providers/dog-service/dog-service';
 import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
+import { AwardServiceProvider } from '../providers/award-service/award-service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DogServiceProvider,
-    OwnerServiceProvider
+    OwnerServiceProvider,
+    AwardServiceProvider
   ]
 })
 export class AppModule {}
