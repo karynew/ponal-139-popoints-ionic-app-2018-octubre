@@ -19,6 +19,10 @@ export class DogServiceProvider {
     return this.http.get('http://localhost:3000/api/level_dogs');
   }
 
+  getPeople(){
+    return this.http.get('http://localhost:3000/api/people');
+  }
+
   getDogs(){
     return this.http.get('http://localhost:3000/api/dogs');
   }
