@@ -22,9 +22,11 @@ export class WalkHourPage {
     "numberWalk": 0,
     "morningHour": "",
     "nightHour": "",
-    "dogsDogId": 0,
+    "dogsDogId": 1,
     "afternoonHour": ""
   }
+
+  //https://medium.com/@sunilksamanta/mysql-like-auto-increment-numeric-primary-key-for-loopback-2cdb477cdcf1
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public dogService: DogServiceProvider) {
   }

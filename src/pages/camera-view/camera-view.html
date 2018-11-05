@@ -16,6 +16,6 @@
 <ion-content padding>
 	<button ion-button (click)="takePhoto()">Take photo</button>
 	<span>
-		<img src="{{ dogPhoto }}">
+		<img [src]="dogPhoto" *ngIf="dogPhoto"/>
 	</span>
 </ion-content>

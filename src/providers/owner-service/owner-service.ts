@@ -15,9 +15,6 @@ export class OwnerServiceProvider {
     console.log('Hello OwnerServiceProvider Provider');
   }
 
-  getPeople(){
-    return this.http.get('http://localhost:3000/api/people');
-  }
   postPeople(dataPeople): Observable<any>{
     return this.http.post(`http://localhost:3000/api/people`, dataPeople);
   }

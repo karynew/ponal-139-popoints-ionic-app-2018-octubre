@@ -18,8 +18,17 @@ import { DogServiceProvider } from '../../providers/dog-service/dog-service';
 })
 export class DogSignupPage {
 
+  /* levelData:any = {
+    id: 0,
+    number: ""
+  }; */
+
+  peopleData:any = {
+    id: 0
+  }
+  
   postData = {
-    "dogId": 1,
+    //"dogId": 2,
     "nameDog": "",
     "pictureDog": "",
     "weigthDog": 0,
@@ -27,26 +36,32 @@ export class DogSignupPage {
     "birthayDog": "",
     "popointsDogs": 0,
     "numberPlate": "",
-    /* "codeDog": "uno",
     "levelIdlevel": 1,
-    "numberLevel": "uno" */
+    "numberLevel": "GUAU",
+    "age": 0,
+    "peopleId": 4
+    /* "codeDog": "uno",*/
   }
-
-  dataTest = this.dogService.getLevelDogs()
-  .subscribe(dataLevel => {
-    console.log(dataLevel[0].numberLevel);
-  }, error => {
-    console.log(error);
-  });
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public dogService: DogServiceProvider) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DogSignupPage');
-  }
+    this.dogService.getLevelDogs()
+    .subscribe(getLevel => {
+      console.log(getLevel[0].numberLevel);
+      //this.levelData.id = getLevel[0].idlevel;
+      //this.levelData.number = getLevel[0].numberLevel;
+    }, error => {
+      console.log(error);
+    });
 
-  goPhoto() {
-  	this.navCtrl.setRoot('CameraViewPage');
+    this.dogService.getPeople()
+    .subscribe(getPeople => {
+      this.peopleData = getPeople[4].peopleId;
+    }, error => {
+      console.log(error);
+    });
   }
 
   createDog(){
