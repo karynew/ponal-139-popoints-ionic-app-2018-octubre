@@ -19,142 +19,7 @@
 
 
 <ion-content >
-   <!-- <button class="price" color="white" medium outline (click)=" goToProductDetail()" >
-		<ion-card>
-			<div class="notifications-img">
-			 		<div class="notifications-item-home">
-			 			<img src="./assets/imgs/logo-sponsor.jpg"/>
-			 		</div>
-		 	</div>
-		 	<div class="notifications-content">
-			<ion-card-header>
-				Bolsa de concentrado
-			</ion-card-header>
-			<ion-card-content>
-				<p>Acumula 200 popoints y gana 10% de descuento en concentrado para tu perro PROPLAN.</p>
-				<div class="clearfix">	</div>
-				<ion-row>
-   						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>100 Popoints</p></div>
-      								
-    					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>20 Und</p></div>
-      						
-    				</ion-col>
-    				
-  				</ion-row>
-					
-			</ion-card-content>
-			</div>
-
-	  	</ion-card>
-	  
-	</button>
-	<button class="price" color="white" medium outline (click)=" goToProductDetail()" >
-		<ion-card>
-			<div class="notifications-img">
-			 		<div class="notifications-item-home">
-			 			<img src="./assets/imgs/logo-sponsor.jpg"/>
-			 		</div>
-		 	</div>
-		 	<div class="notifications-content">
-			<ion-card-header>
-				Bolsa de concentrado
-			</ion-card-header>
-			<ion-card-content>
-				<p>Acumula 200 popoints y gana 10% de descuento en concentrado para tu perro PROPLAN.</p>
-				<div class="clearfix">	</div>
-				<ion-row>
-   						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>100 Popoints</p></div>
-      								
-    					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>20 Und</p></div>
-      						
-    				</ion-col>
-    				
-  				</ion-row>
-			</ion-card-content>
-			</div>
-	  	</ion-card>
-	</button>
-	<button class="price" color="white" medium outline (click)=" goToProductDetail()" >
-		<ion-card>
-			<div class="notifications-img">
-			 		<div class="notifications-item-home">
-			 			<img src="./assets/imgs/logo-sponsor.jpg"/>
-			 		</div>
-		 	</div>
-		 	<div class="notifications-content">
-			<ion-card-header>
-				Bolsa de concentrado
-			</ion-card-header>
-			<ion-card-content>
-				<p>Acumula 200 popoints y gana 10% de descuento en concentrado para tu perro PROPLAN.</p>
-				<div class="clearfix">	</div>
-				<ion-row>
-   						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>100 Popoints</p></div>
-      								
-    					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>20 Und</p></div>
-      						
-    				</ion-col>
-    				
-  				</ion-row>
-			</ion-card-content>
-			</div>
-	  	</ion-card>
-	</button>
-	<button class="price" color="white" medium outline (click)=" goToProductDetail()" >
-		<ion-card>
-			<div class="notifications-img">
-			 		<div class="notifications-item-home">
-			 			<img src="./assets/imgs/logo-sponsor.jpg"/>
-			 		</div>
-		 	</div>
-		 	<div class="notifications-content">
-			<ion-card-header>
-				{{ premios1.title }}
-			</ion-card-header>
-			<ion-card-content>
-				<p>{{ premios1.description }}</p>
-				<div class="clearfix">	</div>
-				<ion-row>
-   						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>{{ premios1.Num_Popoints }} popoints</p></div>
-      								
-    					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>{{ premios1.Quantity_Awards }} UND</p></div>
-      						
-    				</ion-col>
-    				
-  				</ion-row>
-			</ion-card-content>
-			</div>
-	  	</ion-card>
-	</button>
-	<button class="price" color="white" medium outline (click)=" goToProductDetail()" >
+	<button class="price" color="white" medium outline (click)=" goToProductDetail()" *ngFor="let premio of premios">
 		<ion-card >
 			<div class="notifications-img"  >
 			 		<div class="notifications-item-home">
@@ -162,39 +27,6 @@
 			 		</div>
 		 	</div>
 		 	<div class="notifications-content">
-			<ion-card-header >
-				{{ premios2.title }}
-			</ion-card-header>
-			<ion-card-content > 
-				<p>{{ premios2.description }}</p>
-				<div class="clearfix">	</div>
-				<ion-row>
-   						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>{{ premios2.Num_Popoints }} popoints</p></div>
-      								
-    					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>{{ premios2.Quantity_Awards }} UND</p></div>
-      						
-    				</ion-col>
-    				
-  				</ion-row>
-			</ion-card-content>
-			</div>
-	  	</ion-card>
-	</button>-->
-	<button class="price" color="white" medium outline (click)=" goToProductDetail()" >
-		<ion-card >
-			<div class="notifications-img"  >
-			 		<div class="notifications-item-home">
-			 			<img src="./assets/imgs/logo-sponsor.jpg"/>
-			 		</div>
-		 	</div>
-		 	<div class="notifications-content" *ngFor="let premio of premios">
 			<ion-card-header >
 				{{ premio.titleAward }}
 			</ion-card-header>
@@ -203,18 +35,11 @@
 				<div class="clearfix">	</div>
 				<ion-row>
    						 <ion-col col-6>
-      								
-        								
-        								<div class="popoints-number"><p>{{ premio.numPopoints }} popoints</p></div>
-      								
+							<div class="popoints-number"><p>{{ premio.numPopoints }} popoints</p></div>			
     					</ion-col>
-    				<ion-col  col-6>
-      						
-        						
-        						<div class="awward-units"><p>{{ premio.quantityAwardsAvailable }} UND</p></div>
-      						
+    				<ion-col  col-6>	
+        				<div class="awward-units"><p>{{ premio.quantityAwardsAvailable }} UND</p></div>
     				</ion-col>
-    				
   				</ion-row>
 			</ion-card-content>
 			</div>
