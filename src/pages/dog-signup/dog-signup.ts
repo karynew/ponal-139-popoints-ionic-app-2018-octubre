@@ -64,10 +64,6 @@ export class DogSignupPage {
     });
   }
 
-  goPhoto() {
-  	this.navCtrl.setRoot('CameraViewPage');
-  }
-
   createDog(){
     this.dogService.postDogs(this.postData)
       .subscribe(data => {

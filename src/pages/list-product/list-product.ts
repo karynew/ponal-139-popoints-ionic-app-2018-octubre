@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProductDetailPage } from '../product-detail/product-detail';
+import { AwardServiceProvider } from '../../providers/award-service/award-service';
 /**
  * Generated class for the ListProductPage page.
  *
@@ -15,11 +16,23 @@ import { ProductDetailPage } from '../product-detail/product-detail';
 })
 export class ListProductPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public awardService: AwardServiceProvider) {
   }
 
-  ionViewDidLoad() {
+ // premios= {};
+  premios: any = [];
+
+ionViewDidLoad() {
     console.log('ionViewDidLoad ListProductPage');
+    this.awardService.getAward()
+    .subscribe((award)=>{
+      console.log(award);
+      this.premios = award;
+    },
+    (error)=> {
+      console.error(error);
+    })
+    
   }
 
   goToProductDetail(){
