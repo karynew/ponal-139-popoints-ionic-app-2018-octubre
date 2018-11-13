@@ -22,7 +22,7 @@ export class SignUpPage {
     "lastName": "",
     "emailUser": "",
     "passwordUser": "",
-    "peopleId": 4,
+    //"peopleId": 5,
     "identificationNumber": 0
   }
 
@@ -31,6 +31,8 @@ export class SignUpPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpPage');
+    let dataTest = 90809;
+    console.log('Cargo ' + dataTest);
   }
 
   createPeople(){
@@ -56,3 +58,7 @@ export class SignUpPage {
   }
 
 }
+
+//https://blog.ng-classroom.com/blog/ionic2/sqlite-and-ionic/
+//http://blog.enriqueoriol.com/2017/06/ionic-3-sqlite.html
+//https://devdactic.com/ionic-sqlite-queries-database/
