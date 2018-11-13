@@ -13,18 +13,19 @@
       </ion-item>
       <ion-item>
         <ion-label>En la mañana:</ion-label>
-        <ion-datetime displayFormat="h/m/a" [(ngModel)]="walkData.morningHour" name="morning"></ion-datetime>
+        <ion-datetime displayFormat="HH:mm:ss" [(ngModel)]="walkData.morningHour" name="morning"></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label>En la tarde:</ion-label>
-        <ion-datetime displayFormat="HH-mm-A" [(ngModel)]="walkData.afternoonHour" name="afternoon"></ion-datetime>
+        <ion-datetime displayFormat="HH:mm:ss" [(ngModel)]="walkData.afternoonHour" name="afternoon"></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label>En la noche:</ion-label>
-        <ion-datetime displayFormat="h/m/a" [(ngModel)]="walkData.nightHour" name="night"></ion-datetime>
+        <ion-datetime displayFormat="HH:mm:ss" [(ngModel)]="walkData.nightHour" name="night"></ion-datetime>
       </ion-item>
       <div padding>
           <button class="btn-forms" block (click)="goToMenu()">¡Bien hecho! Terminaste</button>
       </div>    
     </form>
 </ion-content>
+
