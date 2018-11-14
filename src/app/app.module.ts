@@ -21,6 +21,7 @@ import { AdviceModalPage } from '../pages/advice-modal/advice-modal';
 import { DogServiceProvider } from '../providers/dog-service/dog-service';
 import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
 import { AwardServiceProvider } from '../providers/award-service/award-service';
+import { LevelsServiceProvider } from '../providers/levels-service/levels-service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { AwardServiceProvider } from '../providers/award-service/award-service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DogServiceProvider,
     OwnerServiceProvider,
-    AwardServiceProvider
+    AwardServiceProvider,
+    LevelsServiceProvider
   ]
 })
 export class AppModule {}

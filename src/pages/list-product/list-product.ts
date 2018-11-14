@@ -19,18 +19,26 @@ export class ListProductPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public awardService: AwardServiceProvider) {
   }
 
+<<<<<<< HEAD
    premios:any=[];
  
+=======
+ // premios= {};
+  premios: any = [];
+>>>>>>> 2f97e4168fb13236101d5c74898726f406788793
 
 ionViewDidLoad() {
     console.log('ionViewDidLoad ListProductPage');
     this.awardService.getAward()
-   
     .subscribe((award)=>{
       console.log(award);
       this.premios = award;
+<<<<<<< HEAD
       
            },
+=======
+    },
+>>>>>>> 2f97e4168fb13236101d5c74898726f406788793
     (error)=> {
       console.error(error);
     })

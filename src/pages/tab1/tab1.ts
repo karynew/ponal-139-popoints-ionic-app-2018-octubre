@@ -40,9 +40,13 @@ export class Tab1Page {
     this.type_popularidad='Popularidad';
   }
 
+  goPhoto() {
+  	this.navCtrl.setRoot('CameraViewPage');
+  }
+
   goBack(){
-          this.navCtrl.pop();
-    }
+    this.navCtrl.pop();
+  }
   
 
 }
