@@ -17,10 +17,10 @@ import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
   templateUrl: 'camera-view.html',
 })
 export class CameraViewPage {
-	dogPhoto: string = null;
+	dogPhoto: string = "";
 	image: object = {
-		"name": this.dogPhoto
-	};
+		"result": {}
+	}
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera, public dogService: DogServiceProvider) {
   }
@@ -31,7 +31,7 @@ export class CameraViewPage {
 
   takePhoto() {
 	  const options: CameraOptions = {
-	  	quality: 70,
+	  	quality: 100,
 	  	destinationType: this.camera.DestinationType.DATA_URL,
 			encodingType: this.camera.EncodingType.JPEG,
 	  	mediaType: this.camera.MediaType.PICTURE,
@@ -39,7 +39,7 @@ export class CameraViewPage {
 	  }
 	  this.camera.getPicture(options).then((imageData) => {
 			//let data = `data:image/jpeg;base64,${imageData}`;
-			this.dogPhoto = `data:image/jpeg;base64,${imageData}`;
+			this.dogPhoto = 'data:image/jpeg;base64,' + imageData;
 			this.postPhoto();
 	  }, (err) => {
 			//console.error( error );
@@ -47,7 +47,8 @@ export class CameraViewPage {
 	}
 	
 	postPhoto() {
-		this.dogService.postImage(this.image);
-		console.log("Foto tomada");
+		console.log(this.dogPhoto);
+		//this.dogService.postImage(this.image);
+		//console.log("Foto tomada");
 	}
 }

@@ -34,7 +34,7 @@ export class DogServiceProvider {
   }
 
   postImage(imageData): Observable<any> {
-    return this.http.post(`http://localhost:3000/api/containers`, imageData);
+    return this.http.post(`http://localhost:3000/api/containers/evidence/upload`, imageData);
   }
 
   //https://blog.ng-classroom.com/blog/ionic2/rest-api-with-ionic/
