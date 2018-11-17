@@ -34,7 +34,35 @@ export class DogServiceProvider {
   }
 
   postImage(imageData): Observable<any> {
-    return this.http.post(`http://localhost:3000/api/containers/evidence/upload`, imageData);
+    
+    const formData: FormData = new FormData();
+    formData.append("container", this.dataURItoBlob(imageData), `${this._getNameRandom()}.jpg`);
+    
+    return this.http.post(`http://localhost:3000/api/containers/evidence/upload`, formData);
+  }
+
+  dataURItoBlob(dataURI) {
+    const byteString = atob(dataURI);
+    const arrayBuffer = new ArrayBuffer(byteString.length);
+    const int8Array = new Uint8Array(arrayBuffer);
+    for (let i = 0; i < byteString.length; i++) {
+      int8Array[i] = byteString.charCodeAt(i);
+    }
+    const blob = new Blob([arrayBuffer], { type: 'image/jpeg' });    
+    return blob;
+  }
+
+  _getNameRandom()
+  {
+    // Naming the image
+    const date = new Date().valueOf();
+    let text = '';
+    const possibleText = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (let i = 0; i < 8; i++) {
+      text += possibleText.charAt(Math.floor(Math.random() * possibleText.length));
+    }
+
+    return text;
   }
 
   //https://blog.ng-classroom.com/blog/ionic2/rest-api-with-ionic/

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { OwnerServiceProvider } from '../../providers/owner-service/owner-service';
 import { AlertController } from 'ionic-angular';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 /**
  * Generated class for the SignUpPage page.
@@ -26,7 +27,23 @@ export class SignUpPage {
     "identificationNumber": 0
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public peopleService: OwnerServiceProvider, public alertCtrl: AlertController) {
+  datos: FormGroup;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public peopleService: OwnerServiceProvider, public alertCtrl: AlertController, private formBuilder: FormBuilder) {
+
+    this.datos = this.formBuilder.group({
+      name: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', [
+                    Validators.required,
+                    Validators.email
+                  ]
+                ],
+      identification: ['', Validators.required],
+      password: ['', Validators.required],
+      passwordConfirm: ['', Validators.required]
+    });
+    
   }
 
   ionViewDidLoad() {
