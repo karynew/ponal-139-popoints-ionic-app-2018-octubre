@@ -23,13 +23,18 @@ export class SignUpPage {
     "lastName": "",
     "emailUser": "",
     "passwordUser": "",
-    //"peopleId": 5,
     "identificationNumber": 0
   }
 
   datos: FormGroup;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public peopleService: OwnerServiceProvider, public alertCtrl: AlertController, private formBuilder: FormBuilder) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public peopleService: OwnerServiceProvider,
+    public alertCtrl: AlertController,
+    private formBuilder: FormBuilder
+  ) {
 
     this.datos = this.formBuilder.group({
       name: ['', Validators.required],
@@ -40,16 +45,13 @@ export class SignUpPage {
                   ]
                 ],
       identification: ['', Validators.required],
-      password: ['', Validators.required],
-      passwordConfirm: ['', Validators.required]
+      password: ['', Validators.required]
     });
     
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpPage');
-    let dataTest = 90809;
-    console.log('Cargo ' + dataTest);
   }
 
   createPeople(){

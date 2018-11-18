@@ -16,21 +16,21 @@ export class DogServiceProvider {
   }
 
   getLevelDogs() {
-    return this.http.get('http://localhost:3000/api/level_dogs');
+    return this.http.get('https://popoints-backend.herokuapp.com/api/level_dogs');
   }
 
   getPeople(){
-    return this.http.get('http://localhost:3000/api/people');
+    return this.http.get('https://popoints-backend.herokuapp.com/api/people');
   }
 
   getDogs(){
-    return this.http.get('http://localhost:3000/api/dogs');
+    return this.http.get('https://popoints-backend.herokuapp.com/api/dogs');
   }
   postDogs(postData): Observable<any>{
-    return this.http.post(`http://localhost:3000/api/dogs`, postData);
+    return this.http.post(`https://popoints-backend.herokuapp.com/api/dogs`, postData);
   }
   postWalkHour(walkData): Observable<any>{
-    return this.http.post(`http://localhost:3000/api/walk_hours`, walkData);
+    return this.http.post(`https://popoints-backend.herokuapp.com/api/walk_hours`, walkData);
   }
 
   postImage(imageData): Observable<any> {
@@ -38,7 +38,7 @@ export class DogServiceProvider {
     const formData: FormData = new FormData();
     formData.append("container", this.dataURItoBlob(imageData), `${this._getNameRandom()}.jpg`);
     
-    return this.http.post(`http://localhost:3000/api/containers/evidence/upload`, formData);
+    return this.http.post(`https://popoints-backend.herokuapp.com/api/containers/evidence/upload`, formData);
   }
 
   dataURItoBlob(dataURI) {
