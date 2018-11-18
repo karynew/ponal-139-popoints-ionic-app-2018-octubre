@@ -16,13 +16,14 @@
  			<div class="dog-img">
  				<div class="avatar-img-content">
  					<img src="./assets/imgs/ranking-1.jpg"/>
+ 					<!-- <img src="{{ dogs.pictureDog }}"/> -->
  				</div>
  			</div>
  		</ion-card-title>
  		<div class="dog-info">
- 			<h1>{{nombre_perro}}</h1>
- 			<p>{{ciudad_pais}}</p>
- 			<h2>{{nivel}}</h2>
+ 			<h1>{{ dogs.nameDog }}</h1>
+ 			<p>Número de popoints {{ dogs.popointsDogs }}</p>
+ 			<h2>{{ dogs.numberLevel }}</h2>
  		</div>
  	</ion-card-content>
  </ion-card>
@@ -53,6 +54,6 @@
  	</div>
  </div>
  
- <button class="btn-primaryFoto btn-large" (click)="goPhoto()">Tomar Fotografía</button>
+ <button class="btn-primaryFoto btn-large" (click)="takePhoto()">Tomar Fotografía</button>
 </ion-content>
 

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import { DogServiceProvider } from '../../providers/dog-service/dog-service';
+import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
 
 /**
  * Generated class for the Tab1Page page.
@@ -15,6 +18,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 })
 export class Tab1Page {
+  dogPhoto: string = "";
+	image: object = {
+		"result": {}
+  }
+  dogs: any = {};
+
 	nombre_perro:string;
 	ciudad_pais:string;
 	nivel:string;
@@ -23,12 +32,25 @@ export class Tab1Page {
 	Porcentaje_convivencia:string;
 	type_convivencia:string;
 	Porcentaje_popularidad:string;
-	type_popularidad:string;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  type_popularidad:string;
+  
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public camera: Camera, 
+		public dogService: DogServiceProvider
+  ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tab1Page');
+    this.dogService.getDogs()
+    .subscribe((dogData)=>{
+      this.dogs = dogData[2];
+    },
+    (error)=>{
+      console.error(error);
+    })
+
     this.nombre_perro='LUCAS';
     this.ciudad_pais='Bogota-Colombia';
     this.nivel='MASTER GUAU';
@@ -40,6 +62,32 @@ export class Tab1Page {
     this.type_popularidad='Popularidad';
   }
 
+  takePhoto() {
+	  const options: CameraOptions = {
+			quality: 100,
+			destinationType: this.camera.DestinationType.DATA_URL,
+			encodingType: this.camera.EncodingType.JPEG,
+			mediaType: this.camera.MediaType.PICTURE,
+			saveToPhotoAlbum: true
+		}
+		
+	  this.camera.getPicture(options).then((imageData) => {
+			this.dogPhoto = `data:image/jpeg;base64,${imageData}`;
+
+			this.dogService.postImage(imageData).subscribe(
+				res => {
+				console.log(res);
+				},
+				err => {
+				console.log("Error occured");
+				}
+			);
+
+	  }, (err) => {
+			//console.error( error );
+	  });
+	}
+
   goPhoto() {
   	this.navCtrl.setRoot('CameraViewPage');
   }
@@ -47,6 +95,4 @@ export class Tab1Page {
   goBack(){
     this.navCtrl.pop();
   }
-  
-
 }

@@ -9,46 +9,41 @@
     <ion-title>
       <h2>Datos del amo</h2>
     </ion-title>
-    <form>
+    <form [formGroup]="datos" novalidate>
       <ion-list>
   
         <ion-item>
           <ion-label floating>Nombre del amo</ion-label>
-          <ion-input type="text" [(ngModel)]="dataPeople.firstName" name="name"></ion-input>
+          <ion-input type="text" [(ngModel)]="dataPeople.firstName" formControlName="name"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label floating>Apellido del amo</ion-label>
-          <ion-input type="text" [(ngModel)]="dataPeople.lastName" name="lastName"></ion-input>
+          <ion-input type="text" [(ngModel)]="dataPeople.lastName" formControlName="lastName"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Correo electrónico</ion-label>
-          <ion-input type="email" [(ngModel)]="dataPeople.emailUser" name="email"></ion-input>
+          <ion-input type="email" [(ngModel)]="dataPeople.emailUser" formControlName="email"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Número de Documento</ion-label>
-          <ion-input type="number" [(ngModel)]="dataPeople.identificationNumber" name="identification"></ion-input>
+          <ion-input type="number" [(ngModel)]="dataPeople.identificationNumber" formControlName="identification"></ion-input>
         </ion-item>
   
         <ion-item>
           <ion-label floating>Password</ion-label>
-          <ion-input type="password" [(ngModel)]="dataPeople.passwordUser" name="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="dataPeople.passwordUser" formControlName="password"></ion-input>
         </ion-item>
-  
-        <ion-item>
-          <ion-label floating>Confirmar password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-  
+
         <ion-item>
           <ion-label>Autorizo el tratamiento de mis datos personales</ion-label>
-          <ion-checkbox></ion-checkbox>
+          <ion-checkbox checked></ion-checkbox>
         </ion-item>
   
         <div>
-            <button class="btn-forms" block (click)="createPeople()">Registrarse</button>
+            <button class="btn-forms" block [disabled]="!this.datos.valid" (click)="createPeople()">Registrarse</button>
         </div>
   
       </ion-list>
