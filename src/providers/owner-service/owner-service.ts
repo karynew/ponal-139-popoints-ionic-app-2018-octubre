@@ -16,7 +16,7 @@ export class OwnerServiceProvider {
   }
 
   postPeople(dataPeople): Observable<any>{
-    return this.http.post(`http://localhost:3000/api/people`, dataPeople);
+    return this.http.post(`https://popoints-backend.herokuapp.com/api/people`, dataPeople);
   }
 
 }

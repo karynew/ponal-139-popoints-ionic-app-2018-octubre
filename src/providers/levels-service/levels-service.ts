@@ -15,7 +15,7 @@ export class LevelsServiceProvider {
   }
 
   getLevels() {
-    return this.http.get('http://localhost:3000/api/level_dogs');
+    return this.http.get('https://popoints-backend.herokuapp.com/api/level_dogs');
   }
 
 }

@@ -28,7 +28,6 @@ export class DogSignupPage {
   }
   
   postData = {
-    //"dogId": 2,
     "nameDog": "",
     "pictureDog": "",
     "weigthDog": 0,
@@ -43,7 +42,11 @@ export class DogSignupPage {
     /* "codeDog": "uno",*/
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public dogService: DogServiceProvider) {}
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public dogService: DogServiceProvider
+  ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DogSignupPage');

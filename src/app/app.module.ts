@@ -22,6 +22,7 @@ import { DogServiceProvider } from '../providers/dog-service/dog-service';
 import { OwnerServiceProvider } from '../providers/owner-service/owner-service';
 import { AwardServiceProvider } from '../providers/award-service/award-service';
 import { LevelsServiceProvider } from '../providers/levels-service/levels-service';
+import { PhotoAlbumProvider } from '../providers/photo-album/photo-album';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { LevelsServiceProvider } from '../providers/levels-service/levels-servic
     DogServiceProvider,
     OwnerServiceProvider,
     AwardServiceProvider,
-    LevelsServiceProvider
+    LevelsServiceProvider,
+    PhotoAlbumProvider
   ]
 })
 export class AppModule {}
