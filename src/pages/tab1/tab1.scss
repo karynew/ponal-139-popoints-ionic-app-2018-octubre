@@ -28,7 +28,32 @@ page-tab1 {
     margin: 2px 0;
     padding: 0px 0;
 }
+.aviso{
+    background:url('/assets/imgs/tab1-aviso.png')no-repeat$darkGreen;
+    background-size:40%;
+    background-position:-15% 0%;
+    height:19vh;
+    display: flex;
+    justify-content: flex-end;
+    p{
+        color:$white;
+        width:50%;
 
+    }
+}
+.ad{
+    background:$darkGreen;
+    background-size:40%;
+    background-position:-15% 0%;
+    height:15vh;
+    display: flex;
+    justify-content: flex-end;
+    p{
+        color:$white;
+        width:50%;
+
+    }
+}
 ion-app.md [padding] .scroll-content {
     padding: 0px;
 }
