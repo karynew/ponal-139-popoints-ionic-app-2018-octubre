@@ -85,5 +85,5 @@
     <allow-navigation href="http://192.168.56.1:8100" sessionid="e0f8199e" />
     <engine name="android" spec="7.1.1" />
     <engine name="browser" spec="5.0.4" />
-    <engine name="ios" spec="~4.5.5" />
+    <engine name="ios" spec="4.5.5" />
 </widget>
