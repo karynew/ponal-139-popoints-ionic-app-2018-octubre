@@ -30,29 +30,67 @@ page-tab1 {
 }
 .aviso{
     background:url('/assets/imgs/tab1-aviso.png')no-repeat$darkGreen;
-    background-size:40%;
-    background-position:-15% 0%;
-    height:19vh;
-    display: flex;
-    justify-content: flex-end;
+    background-size:25%;
+    background-position: 95% 0%;
+    height:10vh;
+    margin: 0px 0px 20px 0px;
+    h2{
+        margin:0px;
+        font-size: 2rem;
+    }
     p{
         color:$white;
-        width:50%;
+        width:100%;
+        margin:0px;
+        font-size: 1.2rem;
 
     }
 }
-.ad{
-    background:$darkGreen;
-    background-size:40%;
-    background-position:-15% 0%;
-    height:15vh;
+.space{
+    padding: 10px 29px 10px 21px;
+}
+.item-md p {
+    margin: 0 0 2px;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: $white;
     display: flex;
-    justify-content: flex-end;
-    p{
-        color:$white;
-        width:50%;
+  flex-wrap: wrap;
+}
 
+.ad{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#015656+1,015656+32,207cca+32,207cca+32,188876+32 */
+background: url('/assets/imgs/tarro.png') no-repeat #ffffff; /* Old browsers */
+    background-size: 20%;
+    background-position: 12% 79%;
+    height: 14vh;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    align-items: center;
+    & .ad-text{
+        width:65%;
+        span{
+            font-size: 2.2rem;
+            color:$greenButton;
+            font-weight:bolder;
+            line-height:0.8rem;
+            letter-spacing: -1.5px;
+        }
+        p{
+            color:$darkMediumGreen;
+            width: 80%;
+            font-size: 1.4rem;
+            line-height:1.8rem;
+            margin: 0px
+    
+        }
     }
+    
 }
 ion-app.md [padding] .scroll-content {
     padding: 0px;
