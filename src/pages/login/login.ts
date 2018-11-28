@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 import { SignUpPage } from '../sign-up/sign-up';
+import { LoginFormPage } from '../login-form/login-form';
 
 /**
  * Generated class for the LoginPage page.
@@ -22,6 +23,9 @@ export class LoginPage {
 
   doSignUp(){
   	this.navCtrl.push(SignUpPage);
+  }
+  goLoginForm() {
+	  this.navCtrl.push(LoginFormPage);
   }
   doLogin(){
   	let alert = this.alertCtrl.create({
@@ -51,12 +55,6 @@ export class LoginPage {
 				text: 'Iniciar sesión',
   				handler: data => {
   					this.navCtrl.setRoot('MenuPage');
-  					// if (User.isValid(data.username, data.password)) {
-  					// 	console.log('Loged In');
-  					// 	this.navCtrl.setRoot('MenuPage');
-  					// } else {
-  					// 	return false;
-  					// }
   				}
 
   			}

@@ -5,12 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Camera } from '@ionic-native/camera';
 import { HttpClientModule } from '@angular/common/http';
-//import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
-//import { DogSignupPage } from '../pages/dog-signup/dog-signup';
 import { CardsPage } from '../pages/cards/cards';
 import { SignUpPage } from '../pages/sign-up/sign-up';
+import { LoginFormPage } from '../pages/login-form/login-form';
 import { ListProductPage } from '../pages/list-product/list-product';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
@@ -24,29 +23,33 @@ import { AwardServiceProvider } from '../providers/award-service/award-service';
 import { LevelsServiceProvider } from '../providers/levels-service/levels-service';
 import { PhotoAlbumProvider } from '../providers/photo-album/photo-album';
 
+//Authentication
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { firebaseConfig } from '../firebase.config';
+
 @NgModule({
   declarations: [
     MyApp,
-    //DogSignupPage,
     CardsPage,
     SignUpPage,
-     AdviceModalPage,
-     AdviceTermsPage
+    AdviceModalPage,
+    AdviceTermsPage,
+    LoginFormPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
-    //IonicStorageModule.forRoot()
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig.fire)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    //DogSignupPage,
     CardsPage,
     SignUpPage,
-     AdviceModalPage,
-     AdviceTermsPage
+    AdviceModalPage,
+    AdviceTermsPage
   ],
   providers: [
     StatusBar,
@@ -57,7 +60,8 @@ import { PhotoAlbumProvider } from '../providers/photo-album/photo-album';
     OwnerServiceProvider,
     AwardServiceProvider,
     LevelsServiceProvider,
-    PhotoAlbumProvider
+    PhotoAlbumProvider,
+    AngularFireAuth
   ]
 })
 export class AppModule {}

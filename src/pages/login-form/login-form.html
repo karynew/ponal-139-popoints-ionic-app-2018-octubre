@@ -1,0 +1,50 @@
+<!--
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Inicia sesión</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="logIn()" [formGroup]="loginForm">
+    <ion-list inset>
+
+      <ion-item [ngClass]="{ invalid: emailErrors.hasError('*', ['touched', 'dirty']) }">
+        <ion-input type="text" placeholder="Correo Electrónico" formControllerName="email"></ion-input>
+      </ion-item>
+
+      <div ngxErrors="email" #emailErrors="ngxErrors">
+        <div [ngxError]="['email', 'required']" [when]="['touched', 'dirty']">Usa una dirección de correo válida</div>
+      </div>
+  
+      <ion-item [ngClass]="{ invalid: passwordErrors.hasError('*', ['touched']) }">
+        <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+      </ion-item>
+  
+      <div ngxErrors="password" #passwordErrors="ngxErrors">
+        <div [ngxError]="['minlength', 'required']" [when]="['touched']">Contraseña incorrecta</div>
+      </div>
+
+    </ion-list>
+    <div padding-horizontal>
+      <div class="form-error">{{loginError}}</div>
+  
+      <button ion-button full type="submit" [disabled]="!loginForm.valid">Iniciar sesión</button>
+      <button block (click)="goLoginForm()" class="btn-white  btn-large">Cancelar</button>
+      <div class="login-footer">
+        <p>
+          <a href="#">Olvidaste tu contraseña?</a>
+          Si eres un nuevo usuario, por favor registrate.
+        </p>
+      </div>
+
+      <ion-list>
+        <button ion-button icon-left block clear (click)="loginWithGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+          Inicia sesión con Google
+        </button>
+      </ion-list>
+      </div>
+  </form>
+</ion-content>

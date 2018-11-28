@@ -23,6 +23,7 @@ export class Tab1Page {
 		"result": {}
   }
   dogs: any = {};
+  id: any;
 
 	nombre_perro:string;
 	ciudad_pais:string;
@@ -75,13 +76,34 @@ export class Tab1Page {
 			this.dogPhoto = `data:image/jpeg;base64,${imageData}`;
 
 			this.dogService.postImage(imageData).subscribe(
-				res => {
-				console.log(res);
-				},
-				err => {
-				console.log("Error occured");
-				}
-			);
+        res => {
+          console.log(res);
+          if (res) {
+      
+            this.dogService.getPopoints(this.id).subscribe(res1 => {
+              const dataUpdate: any = {
+                "popointsId": res1.popointsId,
+                "numberPopoints": parseInt(res1.numberPopoints + 10),
+                "datePicture": new Date(),
+                "evidencePicture": res.result.files.container[0].name,
+                //"dogId": res.dogId
+                "dogId": 3
+              };
+              this.dogService.updateDog(dataUpdate).subscribe(
+                res => {
+                  console.log(res)
+                },
+                err => {
+                  console.log()
+                }
+              )
+            });
+          }
+        },
+        err => {
+          console.log("Error occured");
+        }
+      );
 
 	  }, (err) => {
 			//console.error( error );

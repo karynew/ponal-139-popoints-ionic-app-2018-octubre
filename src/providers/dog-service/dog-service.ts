@@ -29,6 +29,12 @@ export class DogServiceProvider {
   postDogs(postData): Observable<any>{
     return this.http.post(`https://popoints-backend.herokuapp.com/api/dogs`, postData);
   }
+  updateDog(postData): Observable<any>{
+    return this.http.put(`https://popoints-backend.herokuapp.com/api/popoints`, postData);
+  }
+  getPopoints(id): Observable<any>{
+    return this.http.get(`https://popoints-backend.herokuapp.com/api/popoints`, id);
+  }
   postWalkHour(walkData): Observable<any>{
     return this.http.post(`https://popoints-backend.herokuapp.com/api/walk_hours`, walkData);
   }
