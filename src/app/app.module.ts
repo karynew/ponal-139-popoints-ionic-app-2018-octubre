@@ -27,6 +27,8 @@ import { PhotoAlbumProvider } from '../providers/photo-album/photo-album';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { firebaseConfig } from '../firebase.config';
+import { AuthService } from '../services/auth.service';
+import { NgxErrorsModule } from '@ultimate/ngxerrors';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { firebaseConfig } from '../firebase.config';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
-    AngularFireModule.initializeApp(firebaseConfig.fire)
+    AngularFireModule.initializeApp(firebaseConfig.fire),
+    NgxErrorsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,7 +52,8 @@ import { firebaseConfig } from '../firebase.config';
     CardsPage,
     SignUpPage,
     AdviceModalPage,
-    AdviceTermsPage
+    AdviceTermsPage,
+    LoginFormPage
   ],
   providers: [
     StatusBar,
@@ -61,7 +65,8 @@ import { firebaseConfig } from '../firebase.config';
     AwardServiceProvider,
     LevelsServiceProvider,
     PhotoAlbumProvider,
-    AngularFireAuth
+    AngularFireAuth,
+    AuthService
   ]
 })
 export class AppModule {}

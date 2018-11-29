@@ -41,11 +41,14 @@ export class LoginFormPage {
         () => this.navCtrl.setRoot(MenuPage),
         error => this.loginError = error.message
       )
-    }
+  }
+
+  goLoginForm() {
+    this.navCtrl.push('LoginPage');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginFormPage');
-  }
+    }
 
 }
