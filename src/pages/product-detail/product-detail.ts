@@ -31,7 +31,25 @@ export class ProductDetailPage {
     const alert = this.alertCtrl.create({
       title: 'Tu código para canjear es',
       subTitle: '5464484686868',
-      buttons: ['OK']
+      buttons: [
+        
+        {
+          cssClass: 'login-button',
+          text: 'Ok',
+            handler: data => {
+              this.navCtrl.setRoot('Tab2Page');
+              // if (User.isValid(data.username, data.password)) {
+              // 	console.log('Loged In');
+              // 	this.navCtrl.setRoot('MenuPage');
+              // } else {
+              // 	return false;
+              // }
+            }
+  
+          }
+      
+      ]
+      
     });
     alert.present();
   }

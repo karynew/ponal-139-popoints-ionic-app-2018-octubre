@@ -36,7 +36,8 @@ ionViewDidLoad() {
   }
 
   goToProductDetail(){
-    this.navCtrl.setRoot('ProductDetailPage');
+    this.navCtrl.push('ProductDetailPage');
   }
+ 
 
 }
