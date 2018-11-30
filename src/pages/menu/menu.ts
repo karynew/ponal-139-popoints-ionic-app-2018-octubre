@@ -7,6 +7,13 @@ import { Tab1Page } from './../tab1/tab1';
 import { TabsPage } from './../tabs/tabs';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Nav } from 'ionic-angular';
+
+//Authentication
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { firebaseConfig } from '../../firebase.config';
+import { AuthService } from '../../services/auth.service';
+import { NgxErrorsModule } from '@ultimate/ngxerrors';
  
 export interface PageInterface {
   title: string;
@@ -34,10 +41,13 @@ export class MenuPage {
     { title: 'Consejos', pageName: 'AdvicePage',  icon: 'tips' },
     //{ title: 'Retos', pageName: 'Tab1Page',  icon: 'retos' },
     //{ title: 'Notificaciones', pageName: 'NotificationsPage',icon:'notificaciones' },
-    { title: 'Salir', pageName: 'LoginPage', icon: 'salir' },
+    //{ title: 'Salir', pageName: 'LoginPage', icon: 'salir' },
   ];
  
-  constructor(public navCtrl: NavController) { }
+  constructor(
+    public navCtrl: NavController,
+    private auth: AuthService
+    ) { }
  
   openPage(page: PageInterface) {
     let params = {};
@@ -74,6 +84,18 @@ export class MenuPage {
     }
     return;
   }
+
+  login() {
+		//this.menu.close();
+		this.auth.signOut();
+		this.navCtrl.setRoot('LoginFormPage');
+	}
+	
+	logout() {
+		//this.menu.close();
+		this.auth.signOut();
+		this.navCtrl.setRoot('LoginPage');
+	}
 
 
  

@@ -38,7 +38,7 @@ export class LoginFormPage {
 
     this.auth.signInWithEmail(credentials)
       .then(
-        () => this.navCtrl.setRoot(MenuPage),
+        () => this.navCtrl.setRoot('MenuPage'),
         error => this.loginError = error.message
       )
   }

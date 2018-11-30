@@ -15,10 +15,23 @@
  
   <ion-content class="bg-menu">
     <ion-list>
+      <ion-list-header *ngIf="auth.getEmail()">{{auth.getEmail()}}</ion-list-header>
+
       <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
-          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
-          {{ p.title }}
-        </button>
+        <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+        {{ p.title }}
+      </button>
+
+      <ion-item (click)="logout()" *ngIf="auth.authenticated">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Salir
+      </ion-item>
+  
+      <ion-item (click)="login()" *ngIf="!auth.authenticated">
+        <ion-icon name="log-in" item-left></ion-icon>
+        Ingresar
+      </ion-item>
+
     </ion-list>
   </ion-content>
 </ion-menu>
